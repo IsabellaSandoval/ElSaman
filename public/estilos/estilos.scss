@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+$blancoA: #FCFCFC;
+$naranja: #F7931E;
+$azul: #68E0BE;
+$gris: #c4c4c4;
+$grisO: #727272;
+$negro: #474747;
+$tiempo: 0.2s;
+$lato: 'Lato',
+sans-serif;
+$nunito: 'Nunito',
+'sans-serif';
+$paytone: 'Paytone',
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: $blancoA;
+    height: calc(100% - 190px) !important;
+
+}
+
+#contenido {
+    min-height: calc(100% - 247px) !important;
+}
+
+header {
+    backGROUND: $blancoA;
+    position: fixed;
+    z-index: 80000000;
+    width: 100%;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041);
+    .logo {
+        padding: 1.2% 6%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.dropbtn {
+    font-weight: 700;
+    color: $grisO;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    background: $blancoA;
+    transition: all $tiempo;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background: $blancoA;
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: $negro;
+    transition: all $tiempo;
+    font-weight: lighter;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.041);
+}
+
+.dropdown-content a:hover {
+    color: $blancoA;
+    background: $gris;
+    box-shadow: 0 4px 8px 0 rgba(65, 65, 65, 0.041);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background: $gris;
+    color: $blancoA;
+}
+
+.con-menu {
+    margin: 0.5% 3%;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    div {
+        margin-top: 145px;
+        img {
+            width: 100%;
+        }
+    }
+    div:last-child {
+        margin-top: -10%;
+        margin-bottom: 10%;
+        .btn {
+            background: $blancoA;
+            color: $gris;
+            font-size: 16px;
+            padding: 11px 23px;
+            border: 2px solid $gris;
+            box-shadow: 0 4px 8px 0 rgba(179, 179, 179, 0.041);
+            transition: all $tiempo;
+        }
+        .btn:hover {
+            box-shadow: none;
+            border: 2px solid $blancoA;
+            background: $naranja;
+            color: $blancoA;
+            border: 2px solid rgba(0, 0, 0, 0.001);
+            box-shadow: 0 4px 8px 0 rgba(179, 179, 179, 0.041);
+        }
+    }
+    cursor: pointer;
+}
+
+section {
+    margin: 0 5%;
+    width: 90%;
+    align-content: center;
+    .promo {
+        padding: 0;
+        background-image: url("/imagenes/promo.png");
+        background-size: contain;
+        height: 15vw;
+        background-repeat: no-repeat;
+        transition: all 0s;
+    }
+}
+
+.contenido {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info {
+    margin-left: 10%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    div {
+        width: 85%;
+        p {
+            text-align: justify;
+            letter-spacing: 1px;
+            color: $grisO;
+        }
+    }
+}
+
+.imagen {
+    margin: 0;
+    transition: all .3s;
+    img {
+        width: 100%;
+    }
+}
+
+.izq {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .info:first-child {
+        h1 {
+            margin-bottom: 15%;
+        }
+    }
+    .info:last-child {
+        margin-top: 12%;
+    }
+    .imagen {
+        margin-top: 25%;
+    }
+    .imagen:hover {
+        transform: scale(1.1);
+    }
+}
+
+.der {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    .info {
+        margin: 0;
+        margin-right: 10%;
+        margin-top: 25%;
+    }
+    .imagen:hover {
+        transform: scale(1.1);
+    }
+}
+
+h1 {
+    font-family: $lato;
+    font-weight: 900;
+    font-size: 80px;
+    color: $naranja;
+}
+
+h2 {
+    letter-spacing: 3px;
+    color: $grisO;
+}
+
+h3 {
+    font-family: $nunito;
+    color: $blancoA;
+    font-size: 20px;
+}
+
+footer {
+    background: $naranja;
+    color: $blancoA;
+    letter-spacing: 3px;
+    text-align: center;
+    height: 200px;
+    section {
+        margin: 0;
+        width: 100%
+    }
+    .contacto {
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+    form {
+        background: $naranja;
+        margin-bottom: 30px;
+        input[type=text] {
+            letter-spacing: 3px;
+            width: 30%;
+            padding: 8px 20px;
+            margin: 8px 0; //   display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            text-align: center;
+            letter-spacing: 3px;
+            background-color: $azul;
+            color: white;
+            padding: 8px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #457ba0;
+        }
+    }
+    .sombra {
+        background: #CE741B;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 70px;
+        width: 100%;
+        margin: 0;
+        .fab {
+            opacity: .4;
+            font-size: 30px;
+            transition: all $tiempo;
+        }
+        .fab:hover {
+            opacity: 1;
+            font-size: 35px;
+        }
+    }
+}
+
+/* Visualización de Articulos */
+
+.contenidoVA {
+    padding: 20px 0;
+    .izq {
+        margin-top: 140px;
+        width: 20%;
+        article {
+            article {
+                padding-top: 20px;
+                div {
+                    margin: 0 5px;
+                    font-weight: bold;
+                    button {
+                        background: none;
+                        border: none;
+                        font-size: 20px;
+                    }
+                }
+            }
+            article:first-child {
+                padding: 0;
+            }
+            .tipo {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                align-items: flex-start;
+                padding-left: 8%;
+                padding-top: 10px;
+                .container {
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 6px;
+                    cursor: pointer;
+                    user-select: none;
+                    color: $grisO;
+                }
+                /* Hide the browser's default radio button */
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                /* Create a custom radio button */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    border: solid 2px $grisO;
+                }
+                /* On mouse-over, add a grey background color */
+                .container:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+                /* When the radio button is checked, add a blue background */
+                .container input:checked~.checkmark {
+                    background-color: $grisO;
+                }
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                /* Show the indicator (dot/circle) when checked */
+                .container input:checked~.checkmark:after {
+                    display: block;
+                }
+            }
+            .rango {
+                padding: 20px 0;
+                div:nth-child(2) {
+                    padding-right: 80px;
+                    p {
+                        margin: 15px 10px;
+                    }
+                }
+                div:last-child {
+                    text-align: center;
+                    margin-right: 5%;
+                    button {
+                        font-size: 15px;
+                        background: $naranja;
+                        color: #fff;
+                        padding: 4px 10px;
+                    }
+                    button:last-child {
+                        margin-right: 80px;
+                    }
+                    button:hover{
+                        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+                    }
+                }
+            }
+        }
+    }
+    .der {
+        width: 80%;
+        margin-top: 140px;
+        section {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            div:first-child {
+                p {
+                    color: $grisO;
+                    font-weight: bold;
+                }
+            }
+            div:nth-child(2) {
+                div {
+                    p {
+                        color: $grisO;
+                        font-weight: bold;
+                    }
+                    select {
+                        margin-left: 5px;
+                        color: $grisO;
+                    }
+                }
+            }
+            div:last-child {
+                div {
+                    p {
+                        color: $grisO;
+                    }
+                    div {
+                        a {
+                            .fas {
+                                color: $negro;
+                                font-weight: 400;
+                                margin-left: 10px;
+                                font-size: 20px;
+                                opacity: .4;
+                            }
+                            .fas:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.productos {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    justify-content: space-between;
+    article {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        float: left;
+        width: 300px;
+        height: 260px;
+        margin-bottom: 20px;
+        margin-right: 2.5%;
+        opacity: .85;
+        a {
+            text-decoration: none;
+            .img-info {
+                width: 300px;
+                img {
+                    width: 100%;
+                }
+            }
+            button{
+                text-align: center;
+            }
+            .info {
+                margin: 0;
+                padding: 0 15px;
+                h1 {
+                    margin-top: 4px;
+                    font-size: 15px;
+                    color: $naranja;
+                }
+                h2 {
+                    margin-top: 4px;
+                    font-size: 15px;
+                    color: $negro;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+    article:hover {
+        box-shadow: 5px 5px 5px 0px rgba(247, 147, 30, 0.5);
+        opacity: 1;
+    }
+}
+
+/* Visualización de Cada Ternera */
+
+.atras {
+    padding-top: 150px;
+    margin-bottom: 10px;
+    div {
+        a {
+            color: $negro;
+            text-decoration: none;
+            .fas {
+                margin-right: 5px;
+            }
+        }
+    }
+    div:hover {
+        font-weight: bold;
+        a {
+            color: $naranja;
+        }
+    }
+}
+
+.produc {
+    .imagenDet {
+        width: 60%;
+        margin-top: -8%;
+        div {
+            width: 90vh;
+            height: 55vh;
+            background-size: cover;
+        }
+    }
+    .infoDet {
+        width: 40%;
+        display: inline;
+        margin-top: 4%;
+        margin-bottom: 14%;
+        div {
+            padding-right: 70px;
+            h1 {
+                color: $naranja;
+                font-weight: bold;
+                font-family: $nunito;
+                text-transform: capitalize;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: $negro;
+                font-size: 17px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                strong {
+                    font-weight: bold;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                color: $naranja;
+                transition: all .2s;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .precio {
+                font-family: $nunito;
+                font-size: 30px;
+                color: $negro;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+        }
+        .visita {
+            margin-bottom: 20px;
+            a {
+                border: none;
+                div {
+                    font-weight: 300;
+                    background: $naranja;
+                    color: #fff;
+                    font-family: $nunito;
+                    padding: 10px;
+                    width: 30%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+.checkout {
+    margin: 300px $margen;
+    table {
+        width: 100%;
+        tr:first-child {
+            th {
+                background-color: #ebebeb;
+            }
+            th:last-child {
+                background: #fff;
+            }
+        }
+        tr {
+            th {
+                color: $negro;
+                padding: 10px 0;
+            }
+            th:last-child {
+                width: 5%;
+            }
+            td {
+                border: solid 1px $gris;
+                text-align: center;
+                padding: 10px 0;
+                .fas {
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+            td:last-child {
+                border: none;
+            }
+        }
+        .total {
+            th {
+                color: $negro;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            th:nth-child(2) {
+                color: $amarillo;
+            }
+            th:nth-child(3) {
+                color: $negro;
+                background: $amarillo;
+            }
+        }
+    }
+}
+
+.flex-cont-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
