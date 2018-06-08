@@ -589,57 +589,6 @@ footer {
     }
 }
 
-
-.checkout {
-    margin: 300px $margen;
-    table {
-        width: 100%;
-        tr:first-child {
-            th {
-                background-color: #ebebeb;
-            }
-            th:last-child {
-                background: #fff;
-            }
-        }
-        tr {
-            th {
-                color: $negro;
-                padding: 10px 0;
-            }
-            th:last-child {
-                width: 5%;
-            }
-            td {
-                border: solid 1px $gris;
-                text-align: center;
-                padding: 10px 0;
-                .fas {
-                    color: red;
-                    font-size: 18px;
-                }
-            }
-            td:last-child {
-                border: none;
-            }
-        }
-        .total {
-            th {
-                color: $negro;
-                font-weight: bold;
-                font-size: 20px;
-            }
-            th:nth-child(2) {
-                color: $amarillo;
-            }
-            th:nth-child(3) {
-                color: $negro;
-                background: $amarillo;
-            }
-        }
-    }
-}
-
 .flex-cont-index {
     display: flex;
     flex-direction: row;
