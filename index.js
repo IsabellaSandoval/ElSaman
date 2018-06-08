@@ -11,7 +11,7 @@ app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
 
-app.use(express.static(__dirname + '.../public'));
+app.use(express.static('public'));
 
 
 // Conectarse a Base de Datos
@@ -75,7 +75,7 @@ app.get('/genetica/terneras', (req, res) => {
 
     ternerasCollection.toArray((err, result) => {
 
-        res.render('VisualizacionArticulos', {
+        res.render('terneras', {
             Terneras: result
         });
     })
