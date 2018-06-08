@@ -630,6 +630,23 @@ footer {
     }
 }
 
+.desarrolladoPor{
+    background: rgba(8, 8, 8, 0.9);
+    color: $blancoA;
+    text-decoration: none;
+    letter-spacing: 0;
+padding: 5px;
+font-size: 12px;
+    a{
+        text-decoration: none;
+        color: $blancoA;
+
+    }
+    a:hover{
+        color: $naranja;
+    }
+}
+
 .flex-cont-index {
     display: flex;
     flex-direction: row;
