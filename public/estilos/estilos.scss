@@ -589,6 +589,40 @@ footer {
     }
 }
 
+
+.construccion{
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    background: $naranja;
+    width: 15vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 0px 8px -1px rgba(0,0,0,0.25);
+
+    article{
+   
+
+        div{
+            margin: 5px 0;
+            h1{
+                color: $blancoA;
+                font-size: 20px;
+            }
+            p{
+                text-align: justify;
+                a{
+                    color: $blancoA;
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
 .flex-cont-index {
     display: flex;
     flex-direction: row;

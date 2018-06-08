@@ -36,6 +36,11 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+
+app.get('//SynjZ/LXbUZ/',(req,res)=>{
+    res.render('index');
+});
+
 // Dirección de visualización de productos de Alquiler de Vehículos
 app.get('/genetica/terneras', (req, res) => {
 
