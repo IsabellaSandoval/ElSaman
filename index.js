@@ -41,7 +41,52 @@ app.get('//SynjZ/LXbUZ/',(req,res)=>{
     res.render('index');
 });
 
-// Dirección de visualización de productos de Alquiler de Vehículos
+// Dirección de visualización de productos de Embriones
+app.get('/genetica/embriones', (req, res) => {
+
+    var embrionesCollection = db.collection('Embriones').find();
+
+    //Filtro por precio
+    if (req.query.min && req.query.max)
+    embrionesCollection.filter({
+            precio: {
+                $gte: parseInt(req.query.min),
+                $lte: parseInt(req.query.max)
+
+            }
+        });
+
+
+    //Filtro por edad
+    if (req.query.min_ed && req.query.max_ed)
+    embrionesCollection.filter({
+            edad: {
+                $gte: parseInt(req.query.min_ed),
+                $lte: parseInt(req.query.max_ed)
+
+            }
+        });
+
+    //Filtro por sexo
+    if (req.query.sexo)
+    embrionesCollection.filter({
+            sexo: req.query.sexo
+        });
+
+    if (req.query.sexo)
+    embrionesCollection.filter({
+            sexo: req.query.sexo
+        });
+
+        embrionesCollection.toArray((err, result) => {
+
+        res.render('embriones', {
+            Embriones: result
+        });
+    })
+});
+
+// Dirección de visualización de productos de Terneras
 app.get('/genetica/terneras', (req, res) => {
 
     var ternerasCollection = db.collection('Terneras').find();
@@ -86,6 +131,52 @@ app.get('/genetica/terneras', (req, res) => {
     })
 });
 
+
+// Dirección de visualización de productos de Novillas
+app.get('/genetica/novillas', (req, res) => {
+
+    var novillasCollection = db.collection('Novillas').find();
+
+    //Filtro por precio
+    if (req.query.min && req.query.max)
+    novillasCollection.filter({
+            precio: {
+                $gte: parseInt(req.query.min),
+                $lte: parseInt(req.query.max)
+
+            }
+        });
+
+
+    //Filtro por edad
+    if (req.query.min_ed && req.query.max_ed)
+    novillasCollection.filter({
+            edad: {
+                $gte: parseInt(req.query.min_ed),
+                $lte: parseInt(req.query.max_ed)
+
+            }
+        });
+
+    //Filtro por sexo
+    if (req.query.sexo)
+    novillasCollection.filter({
+            sexo: req.query.sexo
+        });
+
+    if (req.query.sexo)
+    novillasCollection.filter({
+            sexo: req.query.sexo
+        });
+
+        novillasCollection.toArray((err, result) => {
+
+        res.render('novillas', {
+            Novillas: result
+        });
+    })
+});
+
 //Dirección de visualización de cada producto
 app.get('/genetica/terneras/:id', (req, res) => {
 
@@ -102,4 +193,17 @@ app.get('/genetica/terneras/:id', (req, res) => {
             });
         });
 
+});
+
+
+app.get('/nosotros',(req,res)=>{
+    res.render('nosotros');
+});
+
+app.get('/servicios',(req,res)=>{
+    res.render('servicios');
+});
+
+app.get('/contacto',(req,res)=>{
+    res.render('contacto');
 });

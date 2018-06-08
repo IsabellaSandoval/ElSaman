@@ -19,13 +19,14 @@ sans-serif;
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
+
 html {
     height: 100%;
 }
+
 body {
     background-color: $blancoA;
     height: calc(100% - 190px) !important;
-
 }
 
 #contenido {
@@ -58,11 +59,13 @@ nav {
     background: $blancoA;
     transition: all $tiempo;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    text-decoration: none;
 }
 
 .dropdown-content {
@@ -391,9 +394,8 @@ footer {
                     button:last-child {
                         margin-right: 80px;
                     }
-                    button:hover{
+                    button:hover {
                         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-
                     }
                 }
             }
@@ -471,7 +473,7 @@ footer {
                     width: 100%;
                 }
             }
-            button{
+            button {
                 text-align: center;
             }
             .info {
@@ -589,8 +591,7 @@ footer {
     }
 }
 
-
-.construccion{
+.construccion {
     position: fixed;
     z-index: 10;
     bottom: 0;
@@ -598,31 +599,37 @@ footer {
     background: $naranja;
     width: 15vw;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 4px 0px 8px -1px rgba(0,0,0,0.25);
-
-    article{
-   
-
-        div{
-            margin: 5px 0;
-            h1{
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+    div {
+        margin: 5px 0;
+        h1 {
+            color: $blancoA;
+            font-size: 20px;
+        }
+        p {
+            text-align: justify;
+            a {
                 color: $blancoA;
-                font-size: 20px;
+                text-decoration: none;
             }
-            p{
-                text-align: justify;
-                a{
-                    color: $blancoA;
-                    text-decoration: none;
-                }
-                a:hover{
-                    text-decoration: underline;
-                }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
+    button {
+        display: flex;
+        background: none;
+        border: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 90%;
+        text-align: right;
+        color: $blancoA;
+    }
 }
+
 .flex-cont-index {
     display: flex;
     flex-direction: row;

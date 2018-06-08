@@ -27,6 +27,4 @@ function cambiarPromo() {
 
     if (i > 2) {
         i = 0;
-    }
-    console.log(i);
-}
+    }}

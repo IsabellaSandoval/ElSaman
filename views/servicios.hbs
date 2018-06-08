@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Productos | El Samán | {{Ternera.nombre}} {{Ternera.numero}}</title>
+    <title>Servicios | El Samán</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
@@ -28,7 +28,7 @@
                 </a>
             </div>
 
-              <div class="flex-item con-menu">
+            <div class="flex-item con-menu">
 
                 <div class="dropdown">
                     <a class="dropbtn" href="/nosotros">NOSOTROS</a>
@@ -56,7 +56,8 @@
         </nav>
     </header>
 
- <section class="construccion">
+    <section class="construccion">
+                        <button class="cerrarConstruccion" onclick="cerrarMensaje()"> <i class="fas fa-times-circle"></i></button>
         <div>
             <h1>Este sitio esta en construcción.</h1>
         </div>
@@ -64,50 +65,7 @@
             <p>Si requiere información, por favor pongase en
                 <a href="/contacto">contacto</a> con nosotros.</p>
         </div>
-        <button class="cerrarConstruccion" onclick="cerrarMensaje()"> cerrar</button>
     </section>
-
-    <div id="contenedor">
-        <section class="atras">
-            <div>
-                <a href="/genetica/terneras">
-                    <i class="fas fa-chevron-circle-left"></i>Volver a Terneras</a>
-            </div>
-        </section>
-        <section class="flex-container produc">
-            <article class="imagenDet">
-                <div style="background-image:url('{{Ternera.imagen}}');">
-                </div>
-            </article>
-            <article class="infoDet">
-                <div>
-                    <h1>{{Ternera.nombre}}{{Ternera.numero}} - Ternero</h1>
-                    <p>{{Ternera.descripcion}} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, alias
-                        expedita. Odit animi libero veniam numquam architecto voluptas et aspernatur, reiciendis maxime dolor
-                        accusantium unde nam similique accusamus distinctio. Non?</p>
-                    <p>
-                        <strong>Raza:</strong> Jersey</p>
-                    <p>
-                        <strong>Categoría:</strong> {{Ternera.categoria}}</p>
-                    <p>
-                        <strong>Fecha de Nacimiento:</strong> {{Ternera.nacimiento}}</p>
-                    <p>
-                        <strong>Sexo:</strong> {{sexo}}</p>
-                    <p>
-                        <strong>Semen Disponible:</strong> {{semenDisp}}</p>
-                    <a href="">VER GENEALOGÍA</a>
-                </div>
-                <div class="visita">
-                    <a href="">
-                        <div>
-                            PLANEAR VISITA
-                        </div>
-                    </a>
-                </div>
-            </article>
-        </section>
-
-    </div>
 
     <footer>
         <section class="contacto">
@@ -133,7 +91,18 @@
     </footer>
 
 
- <script>
+
+    <script src="/javascript/promo.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        (function () {
+            window.sr = ScrollReveal();
+            sr.reveal('.info');
+            sr.reveal('.imagen');
+        })();
+    </script>
+
+    <script>
 
         var boton = document.querySelector(".cerrarConstruccion");
         var construccion = document.querySelector(".construccion");
@@ -148,7 +117,6 @@
             }
         }
     </script>
-
 
 </body>
 
