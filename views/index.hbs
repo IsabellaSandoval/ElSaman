@@ -36,6 +36,10 @@
 
                 <div class="dropdown">
                     <a class="dropbtn" href="/servicios">SERVICIOS</a>
+                    <div class="dropdown-content">
+                        <a href="/genetica/embriones">Venta de Ganado</a>
+                        <a href="#">Asesrotía Técnica</a>
+                    </div>
                 </div>
 
                 <div class="dropdown">
@@ -60,12 +64,12 @@
         <div>
             <img src="imagenes/banner.png" alt="jersey puro">
         </div>
-        <div>
-            <button class="btn">MÁS INFORMACIÓN</button>
-        </div>
     </section>
-    <section class="construccion">
-                <button class="cerrarConstruccion" onclick="cerrarMensaje()"> <i class="fas fa-times-circle"></i></button>
+
+    <!-- <section class="construccion">
+        <button class="cerrarConstruccion" onclick="cerrarMensaje()">
+            <i class="fas fa-times-circle"></i>
+        </button>
         <div>
             <h1>Este sitio esta en construcción.</h1>
         </div>
@@ -73,82 +77,79 @@
             <p>Si requiere información, por favor pongase en
                 <a href="/contacto">contacto</a> con nosotros.</p>
         </div>
-    </section>
+    </section>-->
 
-    <section>
-        <article>
-            <div class="promo"></div>
-        </article>
-    </section>
-
-    <section class="flex-cont-index contenido">
-
-        <section class="flex-item izq">
-            <article class="info">
-                <h1>¿POR QUÉ JERSEY?</h1>
-                <br/>
-                <h2>RUSTICIDAD</h2>
-                <br/>
+    <section class="contenido">
+        <section class="flex-container aparecer">
+            <article>
                 <div>
-                    <p>Su talla pequeña (1,25m de altura), peso promedio de hembras adultas entre 400kg a 500kg, hueso fino
-                        y excelentes patas, permite que se adapte muy fácilmente a una amplia gama de condiciones climáticas
-                        y topográficas. Su menor tamaño hace que sea mas tolerante al calor y a la humedad, resistiendo hasta
-                        5 grados mas que otras razas antes que el exceso de calor afecte su producción.</p>
-
+                    <h1>
+                        ¿POR QUÉ JERSEY?
+                    </h1>
                 </div>
             </article>
-            <article class="imagen">
-                <img src="/imagenes/novi.png" alt="Novillo">
-            </article>
-
-            <article class="info">
-
-                <h2>RENTABILIDAD Y PRODUCTIVIDAD</h2>
-                <br/>
-                <div>
-                    <p>La raza se caracteriza por tener una eficiente conversión de alimento en leche de óptima calidad. La
-                        leche de Jersey tiene en promedio 18% más proteina, 29% más grasa y 20% más calcio que otras razas
-                        especializadas, lo que traduce en un mayor precio por litro vendido (30% más sobre el valor normal).</p>
-                </div>
-            </article>
-
-
         </section>
-        <section class="flex-item der">
+
+        <section class="flex-container aparecer">
+            <article>
+
+                <div>
+                    <h2>RUSTICIDAD</h2>
+                </div>
+                <div class="info">
+                    <p>
+                        Su talla pequeña (1,25m de altura), peso promedio de hembras adultas entre 400kg a 500kg, hueso fino y excelentes patas,
+                        permite que se adapte muy fácilmente a una amplia gama de condiciones climáticas y topográficas.
+                        Su menor tamaño hace que sea mas tolerante al calor y a la humedad, resistiendo hasta 5 grados mas
+                        que otras razas antes que el exceso de calor afecte su producción.
+                    </p>
+
+                </div>
+            </article>
             <article class="imagen">
                 <img src="/imagenes/novilla.png" alt="Novillo">
             </article>
+        </section>
 
-            <article class="info">
-
-                <h2>CRUZAMIENTOS</h2>
-                <br/>
+        <section class="flex-container aparecer">
+            <article class="imagen">
+                <img src="/imagenes/novi.png" alt="Novillo">
+            </article>
+            <article>
                 <div>
+                    <h2>CRUZAMIENTOS</h2>
+                </div>
+                <div class="info">
                     <p>La raza se caracteriza por tener una eficiente conversión de alimento en leche de óptima calidad. La
                         leche de Jersey tiene en promedio 18% más proteina, 29% más grasa y 20% más calcio que otras razas
                         especializadas, lo que traduce en un mayor precio por litro vendido (30% más sobre el valor normal).</p>
                 </div>
             </article>
 
+        </section>
+
+        <section class="flex-container aparecer">
+
+            <article>
+                <div>
+                    <h2>RENTABILIDAD Y PRODUCTIVIDAD</h2>
+                </div>
+                <div class="info">
+                    <p>La raza se caracteriza por tener una eficiente conversión de alimento en leche de óptima calidad. La
+                        leche de Jersey tiene en promedio 18% más proteina, 29% más grasa y 20% más calcio que otras razas
+                        especializadas, lo que traduce en un mayor precio por litro vendido (30% más sobre el valor normal).</p>
+                </div>
+            </article>
             <article class="imagen">
                 <img src="/imagenes/ternera.png" alt="Novillo">
             </article>
         </section>
+
+
     </section>
 
 
     <footer>
-        <section class="contacto">
-            <h3>MANTENTE EN CONTACTO</h3>
-            <p>Suscríbete para recibir nuestra última información</p>
-        </section>
-
-        <section>
-            <form>
-                <input type="text" id="correoo" name="correo" placeholder="Tu correo..">
-                <input type="submit" value="ENVIAR">
-            </form>
-        </section>
         <section>
             <div class="sombra">
                 <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
@@ -157,33 +158,34 @@
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-google-plus-square"></i>
             </div>
-        </section>
 
-        <section class="desarrolladoPor">
-            <div>
-                <p> Design by: <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:<a href="https://www.behance.net/jaime_burb0681" target="_blank"> Jaime Burbano</a></p>
+            <div class="desarrolladoPor">
+                <p> Design by:
+                    <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
+                    <a href="https://www.behance.net/jaime_burb0681" target="_blank">
+                        Jaime Burbano</a>
+                </p>
             </div>
         </section>
+
     </footer>
 
 
 
-    <script src="/javascript/promo.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
         (function () {
             window.sr = ScrollReveal();
-            sr.reveal('.info');
-            sr.reveal('.imagen');
+            sr.reveal('.aparecer');
         })();
     </script>
 
     <script>
-
         var boton = document.querySelector(".cerrarConstruccion");
         var construccion = document.querySelector(".construccion");
         console.log(boton);
-    function cerrarMensaje () {
+
+        function cerrarMensaje() {
 
             if (!boton) {
                 alert("no existe");

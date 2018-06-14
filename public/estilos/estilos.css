@@ -96,57 +96,26 @@ nav .logo img {
 }
 
 .banner {
-  text-align: center;
   padding-top: 30px;
   margin: 0;
-  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .banner div {
   margin-top: 145px;
+  width: 95%;
 }
 
 .banner div img {
   width: 100%;
 }
 
-.banner div:last-child {
-  margin-top: -10%;
-  margin-bottom: 10%;
-}
-
-.banner div:last-child .btn {
-  background: #FCFCFC;
-  color: #c4c4c4;
-  font-size: 16px;
-  padding: 11px 23px;
-  border: 2px solid #c4c4c4;
-  box-shadow: 0 4px 8px 0 rgba(179, 179, 179, 0.041);
-  transition: all 0.2s;
-}
-
-.banner div:last-child .btn:hover {
-  box-shadow: none;
-  border: 2px solid #FCFCFC;
-  background: #F7931E;
-  color: #FCFCFC;
-  border: 2px solid rgba(0, 0, 0, 0.001);
-  box-shadow: 0 4px 8px 0 rgba(179, 179, 179, 0.041);
-}
-
 section {
-  margin: 0 5%;
-  width: 90%;
+  width: 100%;
   align-content: center;
-}
-
-section .promo {
-  padding: 0;
-  background-image: url("/imagenes/promo.png");
-  background-size: contain;
-  height: 15vw;
-  background-repeat: no-repeat;
-  transition: all 0s;
 }
 
 .contenido {
@@ -155,70 +124,34 @@ section .promo {
   box-sizing: border-box;
 }
 
-.info {
-  margin-left: 10%;
-  box-sizing: border-box;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.info div {
-  width: 85%;
-}
-
-.info div p {
-  text-align: justify;
-  letter-spacing: 1px;
-  color: #727272;
-}
-
-.imagen {
-  margin: 0;
-  transition: all .3s;
-}
-
-.imagen img {
+.contenido section article {
+  margin: 0 5%;
   width: 100%;
+  width: 60%;
 }
 
-.izq {
-  width: 50%;
+.contenido section .imagen {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  text-align: right;
 }
 
-.izq .info:first-child h1 {
-  margin-bottom: 15%;
+.contenido section p {
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #474747;
 }
 
-.izq .info:last-child {
-  margin-top: 12%;
+.contenido section h1 {
+  margin-bottom: 10%;
 }
 
-.izq .imagen {
-  margin-top: 25%;
+.contenido section h2 {
+  margin-bottom: 3%;
 }
 
-.izq .imagen:hover {
-  transform: scale(1.1);
-}
-
-.der {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-
-.der .info {
-  margin: 0;
-  margin-right: 10%;
-  margin-top: 25%;
-}
-
-.der .imagen:hover {
-  transform: scale(1.1);
+.contenido section:nth-child(3) .imagen {
+  text-align: left;
 }
 
 h1 {
@@ -244,7 +177,8 @@ footer {
   color: #FCFCFC;
   letter-spacing: 3px;
   text-align: center;
-  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer section {
@@ -252,51 +186,13 @@ footer section {
   width: 100%;
 }
 
-footer .contacto {
-  padding: 0;
-  margin: 0;
-  padding-top: 20px;
-}
-
-footer form {
-  background: #F7931E;
-  margin-bottom: 30px;
-}
-
-footer form input[type=text] {
-  letter-spacing: 3px;
-  width: 30%;
-  padding: 8px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-footer form input[type=submit] {
-  text-align: center;
-  letter-spacing: 3px;
-  background-color: #68E0BE;
-  color: white;
-  padding: 8px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-footer form input[type=submit]:hover {
-  background-color: #457ba0;
-}
-
 footer .sombra {
-  background: #CE741B;
+  background: #F7931E;
   font-size: 30px;
+  padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   height: 70px;
-  width: 100%;
-  margin: 0;
 }
 
 footer .sombra .fab {
@@ -308,6 +204,23 @@ footer .sombra .fab {
 footer .sombra .fab:hover {
   opacity: 1;
   font-size: 35px;
+}
+
+footer .desarrolladoPor {
+  background: #000;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 2px 0;
+  box-sizing: border-box;
+}
+
+footer .desarrolladoPor a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .desarrolladoPor a:hover {
+  color: #F7931E;
 }
 
 /* Visualización de Articulos */
@@ -679,24 +592,6 @@ footer .sombra .fab:hover {
   color: #FCFCFC;
 }
 
-.desarrolladoPor {
-  background: rgba(8, 8, 8, 0.9);
-  color: #FCFCFC;
-  text-decoration: none;
-  letter-spacing: 0;
-  padding: 5px;
-  font-size: 12px;
-}
-
-.desarrolladoPor a {
-  text-decoration: none;
-  color: #FCFCFC;
-}
-
-.desarrolladoPor a:hover {
-  color: #F7931E;
-}
-
 .flex-cont-index {
   display: flex;
   flex-direction: row;
@@ -711,7 +606,7 @@ footer .sombra .fab:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-content: flex-start;
+  align-content: space-between;
   align-items: center;
 }
 

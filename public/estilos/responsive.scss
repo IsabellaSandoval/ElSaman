@@ -1,0 +1,76 @@
+//Responsive index
+@media only screen and (max-width: 1610px) {
+    h1 {
+        font-size: 65px;
+    }
+    .contenido {
+        .izq {
+            .info:last-child {
+                margin-top: 5%;
+            }
+        }
+        .der {
+            .info {
+                margin-top: 30%;
+            }
+        }
+    }
+}
+
+//Lapto Large
+@media only screen and (max-width: 1440px) {
+    .banner {
+        margin-bottom: 100px;
+    }
+    .contenido {
+        .izq {
+            .imagen {
+                margin-top: 15%;
+            }
+            .info:last-child {
+                margin-top: 12%;
+            }
+        }
+        .der {
+            .info {
+                margin-top: 30%;
+            }
+        }
+    }
+}
+
+//Lapto short
+@media only screen and (max-width: 1024px) {
+    .banner {
+        margin-bottom: 100px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2{
+        
+    }
+    p{
+        font-size: 17px;
+    }
+    .contenido {
+        .izq {
+            .imagen {
+                margin-top: 15%;
+            }
+            .info:first-child {
+                h1 {
+                    margin-bottom: 8%;
+                }
+            }
+        }
+        .der {
+            .imagen:first-child{
+                margin-top: 10%;
+            }
+            .info{
+                margin-top: 25%;
+            }
+        }
+    }
+}

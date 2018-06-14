@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1610px) {
+  h1 {
+    font-size: 65px;
+  }
+  .contenido .izq .info:last-child {
+    margin-top: 5%;
+  }
+  .contenido .der .info {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .banner {
+    margin-bottom: 100px;
+  }
+  .contenido .izq .imagen {
+    margin-top: 15%;
+  }
+  .contenido .izq .info:last-child {
+    margin-top: 12%;
+  }
+  .contenido .der .info {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    margin-bottom: 100px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .contenido .izq .imagen {
+    margin-top: 15%;
+  }
+  .contenido .izq .info:first-child h1 {
+    margin-bottom: 8%;
+  }
+  .contenido .der .imagen:first-child {
+    margin-top: 10%;
+  }
+  .contenido .der .info {
+    margin-top: 25%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
