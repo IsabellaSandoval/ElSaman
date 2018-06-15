@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <!-- <section class="construccion">
+    <section class="construccion">
         <button class="cerrarConstruccion" onclick="cerrarMensaje()">
             <i class="fas fa-times-circle"></i>
         </button>
@@ -92,7 +92,7 @@
             <p>Si requiere información, por favor pongase en
                 <a href="/contacto">contacto</a> con nosotros.</p>
         </div>
-    </section>-->
+    </section>
 
     <section class="contenido">
         <section class="flex-container aparecer">
@@ -186,30 +186,10 @@
     </footer>
 
 
-
+    <script src="/javascript/jquery-3.3.1.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-        (function () {
-            window.sr = ScrollReveal();
-            sr.reveal('.aparecer');
-        })();
-    </script>
-
-    <script>
-        var boton = document.querySelector(".cerrarConstruccion");
-        var construccion = document.querySelector(".construccion");
-        console.log(boton);
-
-        function cerrarMensaje() {
-
-            if (!boton) {
-                alert("no existe");
-            } else {
-                padre = construccion.parentNode;
-                padre.removeChild(construccion);
-            }
-        }
-    </script>
+    <script src="/javascript/construccion.js"></script>
+    <script src="/javascript/construccion.js"></script>
 
 </body>
 

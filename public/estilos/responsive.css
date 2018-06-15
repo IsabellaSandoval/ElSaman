@@ -1,18 +1,30 @@
 /* --------------------------->  INDEX  <---------------------------*/
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1140px) {
   h1 {
     font-size: 60px;
   }
   .contenido section .imagen img {
     width: 80%;
   }
+  .construccion {
+    width: 17%;
+  }
 }
 
-@media only screen and (max-width: 1024px) {
-  nav .logo {
+@media screen and (max-width: 1290px) {
+  header nav .logo {
     width: 120px;
   }
-  nav .con-menu {
+  header nav .con-menu {
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header nav .logo {
+    width: 120px;
+  }
+  header nav .con-menu {
     width: 72%;
   }
   .contenido .aparecer {
@@ -20,7 +32,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 50px;
   }
