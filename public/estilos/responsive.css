@@ -56,7 +56,6 @@
     position: fixed;
     margin: 0;
     top: 80px;
-    overflow: scroll;
     background: #F7931E;
     right: 100%;
     z-index: -1;
@@ -65,11 +64,12 @@
   header nav .con-menu ul li {
     display: block;
     margin: 0;
+    padding: 20px;
+    color: #FCFCFC;
   }
   header nav .con-menu ul li a {
     display: block;
     color: #FCFCFC;
-    padding: 10px;
   }
   header nav .con-menu ul li .children {
     width: 100%;

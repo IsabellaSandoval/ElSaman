@@ -83,7 +83,7 @@ $negro: #474747;
                 position: fixed;
                 margin: 0;
                 top: 80px;
-                overflow: scroll;
+                //overflow: scroll;
                 background: $naranja;
                 right: 100%;
                 z-index: -1;
@@ -92,10 +92,12 @@ $negro: #474747;
                     li {
                         display: block;
                         margin: 0;
+                        padding: 20px;
+                        color: $blancoA;
+
                         a {
                             display: block;
                             color: $blancoA;
-                            padding: 10px;
                         }
                         .children {
                             width: 100%;
