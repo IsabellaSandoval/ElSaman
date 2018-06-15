@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>El Sáman</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/responsive.css">
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
     <!-- Font Awesome -->
@@ -19,16 +20,21 @@
 </head>
 
 <body>
-    <header>
-        <nav class="flex-container">
+    <header class="flex-container">
+        <div class="logo">
+            <a href="/">
+                <img src="/imagenes/logo.png" alt="" srcset="">
+            </a>
+        </div>
 
-            <div class="logo flex-item">
-                <a href="/">
-                    <img src="/imagenes/logo.png" alt="" srcset="">
-                </a>
-            </div>
+        <div class="menu-bar">
+            <a href="#" class="btn_menu">
+                <i class="fas fa-bars"></i> </a>
+        </div>
 
-            <div class="flex-item con-menu">
+
+        <nav>
+            <div class="con-menu">
 
                 <div class="dropdown">
                     <a class="dropbtn" href="/nosotros">NOSOTROS</a>
@@ -38,12 +44,12 @@
                     <a class="dropbtn" href="/servicios">SERVICIOS</a>
                     <div class="dropdown-content">
                         <a href="/genetica/embriones">Venta de Ganado</a>
-                        <a href="#">Asesrotía Técnica</a>
+                        <a href="#">Asesoría Técnica</a>
                     </div>
                 </div>
 
                 <div class="dropdown">
-                    <a class="dropbtn">GENÉTICA</a>
+                    <a class="dropbtn" href="#">GENÉTICA</a>
                     <div class="dropdown-content">
                         <a href="/genetica/embriones">Embriones</a>
                         <a href="/genetica/terneras">Terneras</a>

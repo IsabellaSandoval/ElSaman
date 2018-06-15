@@ -1,39 +1,16 @@
-//Responsive index
-@media only screen and (max-width: 1610px) {
-    h1 {
-        font-size: 65px;
-    }
-    .contenido {
-        .izq {
-            .info:last-child {
-                margin-top: 5%;
-            }
-        }
-        .der {
-            .info {
-                margin-top: 30%;
-            }
-        }
-    }
-}
+/* --------------------------->  INDEX  <---------------------------*/
 
 //Lapto Large
 @media only screen and (max-width: 1440px) {
-    .banner {
-        margin-bottom: 100px;
+    h1 {
+        font-size: 60px;
     }
     .contenido {
-        .izq {
+        section {
             .imagen {
-                margin-top: 15%;
-            }
-            .info:last-child {
-                margin-top: 12%;
-            }
-        }
-        .der {
-            .info {
-                margin-top: 30%;
+                img {
+                    width: 80%;
+                }
             }
         }
     }
@@ -41,35 +18,44 @@
 
 //Lapto short
 @media only screen and (max-width: 1024px) {
-    .banner {
-        margin-bottom: 100px;
+    .contenido {
+        .aparecer {
+            margin-top: 8%;
+        }
+    }
+} //Tablet
+@media only screen and (max-width: 768px) {
+    header {
+        nav {
+           .con-menu{
+            width: 80%;
+            height: 100%;
+            position: fixed;
+            background: darkviolet;
+            box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+            
+           }
+            .dropdown{
+                position: fixed;
+                top: 0;
+            }
+        }
+        .menu-bar{
+            display: block;
+        }
     }
     h1 {
         font-size: 50px;
     }
-    h2{
-        
+    h2 {
+        font-size: 20px;
     }
-    p{
-        font-size: 17px;
-    }
-    .contenido {
-        .izq {
-            .imagen {
-                margin-top: 15%;
-            }
-            .info:first-child {
-                h1 {
-                    margin-bottom: 8%;
+    section {
+        article {
+            .info {
+                p {
+                    font-size: 13px;
                 }
-            }
-        }
-        .der {
-            .imagen:first-child{
-                margin-top: 10%;
-            }
-            .info{
-                margin-top: 25%;
             }
         }
     }
