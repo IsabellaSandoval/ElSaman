@@ -1,3 +1,11 @@
+$blancoA: #FCFCFC;
+$naranja: #F7931E;
+$azul: #68E0BE;
+$gris: #c4c4c4;
+$grisO: #727272;
+$negro: #474747;
+
+
 /* --------------------------->  INDEX  <---------------------------*/
 
 //Lapto Large
@@ -14,8 +22,7 @@
             }
         }
     }
-
-    .construccion{
+    .construccion {
         width: 17%;
     }
 }
@@ -38,7 +45,7 @@
     header {
         nav {
             .logo {
-                width: 120px;
+                width: 130px;
             }
             .con-menu {
                 width: 72%;
@@ -53,19 +60,87 @@
 }
 
 //Tablet
-@media screen and (max-width: 768px) {
-   
-    header{
-        nav{
-          .logo{}
-          .menu-bar{}
-          .con-menu{}  
+@media screen and (max-width: 845px) {
+    header {
+        background: $blancoA;
+        nav {
+           
+            .logo {
+                width: 110px;
+                margin-bottom: 10px;
+            }
+            .menu-bar {
+                display: inline-block;
+                position: fixed;
+                top: 3.5%;
+                right: 5%;
+                .btn-menu {
+                    display: block;
+                    width: 100%;
+                    position: fixed;
+                    overflow: hidden;
+                }
+            }
+            .con-menu{
+                width: 50%;
+                height: 100%;
+                height: calc(100% - 80px);
+                position: fixed;
+                margin: 0;
+                top: 80px;
+                overflow: scroll;
+                background: $naranja;
+                right: 100%;
+                z-index: -1;
+                box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.20);
+
+                ul{
+                    li{
+                        display: block;
+                        margin: 0;
+                        a{
+                            display: block;
+                            color: $blancoA;
+                            padding: 10px;
+                        }
+                        .children{
+                            width: 100%;
+                            position: relative;
+                            background: none;
+                            li{
+                                background: none;
+                                width: 100%;
+                                color: $blancoA;
+
+                                a{
+                                    margin-left: 20px;
+                                    color: $blancoA;
+                                }
+                            }
+                            li:hover{
+                                a{
+                                    color: $blancoA;
+
+                                }
+
+                            }
+                        }
+                    }
+                    li:hover{
+                        background: rgb(207, 123, 26);
+                        .children{
+                            li{
+                                a{
+                                    color: $blancoA;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
         }
     }
-   
-   
-   
-   
     h1 {
         font-size: 50px;
     }

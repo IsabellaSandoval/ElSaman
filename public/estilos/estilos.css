@@ -31,6 +31,7 @@ header {
   z-index: 1;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+  height: 80px;
 }
 
 header nav {
@@ -44,6 +45,10 @@ header nav .logo {
   display: inline-block;
   margin-left: 6%;
   margin-top: 2%;
+}
+
+header nav .logo a img {
+  width: 100%;
 }
 
 header nav .menu-bar {

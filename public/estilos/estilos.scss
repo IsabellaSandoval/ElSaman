@@ -44,7 +44,7 @@ header {
     z-index: 1;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.20);
-
+height: 80px;
     nav {
         z-index: 1000;
         justify-content: center;
@@ -54,6 +54,11 @@ header {
             display: inline-block;
             margin-left: 6%;
             margin-top: 2%;
+            a{
+                img{
+                    width: 100%;
+                }
+            }
         }
         .menu-bar {
             display: none;

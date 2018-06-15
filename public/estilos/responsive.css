@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1024px) {
   header nav .logo {
-    width: 120px;
+    width: 130px;
   }
   header nav .con-menu {
     width: 72%;
@@ -32,7 +32,71 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 845px) {
+  header {
+    background: #FCFCFC;
+  }
+  header nav .logo {
+    width: 110px;
+    margin-bottom: 10px;
+  }
+  header nav .menu-bar {
+    display: inline-block;
+    position: fixed;
+    top: 3.5%;
+    right: 5%;
+  }
+  header nav .menu-bar .btn-menu {
+    display: block;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+  header nav .con-menu {
+    width: 50%;
+    height: 100%;
+    height: calc(100% - 80px);
+    position: fixed;
+    margin: 0;
+    top: 80px;
+    overflow: scroll;
+    background: #F7931E;
+    right: 100%;
+    z-index: -1;
+    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+  }
+  header nav .con-menu ul li {
+    display: block;
+    margin: 0;
+  }
+  header nav .con-menu ul li a {
+    display: block;
+    color: #FCFCFC;
+    padding: 10px;
+  }
+  header nav .con-menu ul li .children {
+    width: 100%;
+    position: relative;
+    background: none;
+  }
+  header nav .con-menu ul li .children li {
+    background: none;
+    width: 100%;
+    color: #FCFCFC;
+  }
+  header nav .con-menu ul li .children li a {
+    margin-left: 20px;
+    color: #FCFCFC;
+  }
+  header nav .con-menu ul li .children li:hover a {
+    color: #FCFCFC;
+  }
+  header nav .con-menu ul li:hover {
+    background: #cf7b1a;
+  }
+  header nav .con-menu ul li:hover .children li a {
+    color: #FCFCFC;
+  }
   h1 {
     font-size: 50px;
   }
