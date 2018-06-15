@@ -196,13 +196,13 @@ app.get('/genetica/terneras/:id', (req, res) => {
 
 
 app.get('/nosotros',(req,res)=>{
-    res.render('cons');
+    res.render('nosotros');
 });
 
-app.get('/servicios',(req,res)=>{
-    res.render('cons');
+app.get('/servicios/asesoriatecnica',(req,res)=>{
+    res.render('asesoriaTecnica');
 });
 
 app.get('/contacto',(req,res)=>{
-    res.render('cons');
+    res.render('contacto');
 });

@@ -4,8 +4,6 @@ $azul: #68E0BE;
 $gris: #c4c4c4;
 $grisO: #727272;
 $negro: #474747;
-
-
 /* --------------------------->  INDEX  <---------------------------*/
 
 //Lapto Large
@@ -64,7 +62,6 @@ $negro: #474747;
     header {
         background: $blancoA;
         nav {
-           
             .logo {
                 width: 110px;
                 margin-bottom: 10px;
@@ -81,7 +78,7 @@ $negro: #474747;
                     overflow: hidden;
                 }
             }
-            .con-menu{
+            .con-menu {
                 width: 50%;
                 height: 100%;
                 height: calc(100% - 80px);
@@ -93,49 +90,44 @@ $negro: #474747;
                 right: 100%;
                 z-index: -1;
                 box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.20);
-
-                ul{
-                    li{
+                ul {
+                    li {
                         display: block;
                         margin: 0;
-                        a{
+                        a {
                             display: block;
                             color: $blancoA;
                             padding: 10px;
                         }
-                        .children{
+                        .children {
                             width: 100%;
                             position: relative;
                             background: none;
-                            li{
+                            li {
                                 background: none;
                                 width: 100%;
                                 color: $blancoA;
-
-                                a{
+                                a {
                                     margin-left: 20px;
                                     color: $blancoA;
                                 }
                             }
-                            li:hover{
-                                a{
+                            li:hover {
+                                a {
                                     color: $blancoA;
-
                                 }
-
                             }
                         }
                     }
-                    li:hover{
+                    li:hover {
                         background: rgb(207, 123, 26);
-                        .children{
-                            li{
-                                a{
+                        .children {
+                            li {
+                                a {
                                     color: $blancoA;
                                 }
                             }
                         }
-
                     }
                 }
             }
@@ -155,5 +147,24 @@ $negro: #474747;
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        section {
+            .sombra {
+                h3 {
+                    font-size: 15px;
+                }
+                .fab {
+                    font-size: 25px;
+                }
+                .desarrolladoPor {}
+            }
+        }
+    }
+    .construccion {
+        display: none;
     }
 }

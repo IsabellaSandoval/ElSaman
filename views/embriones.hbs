@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Embriones | El Samán</title>
+    <title>El Sáman</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
-    <link rel="stylesheet" href="/estilos/multirange.css">
+    <link rel="stylesheet" href="/estilos/responsive.css">
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
     <!-- Font Awesome -->
@@ -21,266 +21,62 @@
 
 <body>
     <header>
-        <nav class="flex-container">
-
-            <div class="logo flex-item">
+        <nav>
+            <div class="logo">
                 <a href="/">
                     <img src="/imagenes/logo.png" alt="" srcset="">
                 </a>
             </div>
 
-             <div class="flex-item con-menu">
+            <div class="menu-bar">
+                <a href="#" class="btn_menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
 
-                <div class="dropdown">
-                    <a class="dropbtn" href="/nosotros">NOSOTROS</a>
-                </div>
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="/servicios">SERVICIOS</a>
-                </div>
-
-                <div class="dropdown">
-                    <a class="dropbtn">GENÉTICA</a>
-                    <div class="dropdown-content">
-                        <a href="/genetica/embriones">Embriones</a>
-                        <a href="/genetica/terneras">Terneras</a>
-                        <a href="/genetica/novillas">Novillas</a>
-                    </div>
-                </div>
-
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="/contacto">CONTACTO</a>
-                </div>
-
+            <div class="con-menu">
+                <ul>
+                    <li>
+                        <a href="/nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="">SERVICIOS</a>
+                        <ul class="children">
+                            <li>
+                                <a href="#">Venta de Ganado</a>
+                            </li>
+                            <li>
+                                <a href="/servicios/asesoriatecnica">Asesoría Técnica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="">GÉNETICA</a>
+                        <ul class="children">
+                            <li>
+                                <a href="/genetica/embriones">Embriones</a>
+                            </li>
+                            <li>
+                                <a href="/genetica/terneras">Terneras</a>
+                            </li>
+                            <li>
+                                <a href="/genetica/novillas">Novillas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contacto">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
     </header>
- <section class="construccion">
-                <button class="cerrarConstruccion" onclick="cerrarMensaje()"> <i class="fas fa-times-circle"></i></button>
-        <div>
-            <h1>Este sitio esta en construcción.</h1>
-        </div>
-        <div>
-            <p>Si requiere información, por favor pongase en
-                <a href="/contacto">contacto</a> con nosotros.</p>
-        </div>
-    </section>
 
-    <section class="flex-cont-index contenidoVA">
+  
 
-        <section class="flex-item izq">
-
-            <article>
-                <!-- Ver tipo -->
-
-                <article>
-                    <div class="flex-cont-index">
-                        <div class="flex-item">
-                            <p>Ver Filtros</p>
-                        </div>
-
-                        <div class="flex-item">
-                            <button class="verFiltros">
-                                <i class="fas fa-caret-up"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </article>
-
-                <!-- Filtro por tipos -->
-                <article>
-                    <div class="flex-cont-index">
-                        <div class="flex-item">
-                            <p>Tipo</p>
-                        </div>
-
-                        <div class="flex-item">
-                            <button class="verFiltros">
-                                <i class="fas fa-caret-up"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="tipo">
-                        <label class="container">Todos
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Embrión
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Ternera
-                            <input type="radio" name="radio" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Novilla
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Vaca
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-
-                    </div>
-
-                </article>
-
-                <!-- Filtro por edad -->
-                <article class="flex-cont-index ver">
-                    <div class="flex-item">
-                        <p>Edad</p>
-                    </div>
-
-                    <div class="flex-item">
-                        <button class="verFiltros">
-                            <i class="fas fa-caret-up"></i>
-                        </button>
-                    </div>
-
-                </article>
-
-                <!--....................FILTRO edad.............. -->
-                <article class="rango">
-                    <div class=" flex-container slidecontainer">
-                        <input type="range" min="0" max="7" value="0" class="slider" id="desde_edad">
-                        <input type="range" min="7" max="15" value="15" class="slider" id="hasta_edad">
-                    </div>
-                    <div class="flex-container">
-                        <p>Desde:
-                            <span id="desdeValor_edad"></span>
-                        </p>
-                        <p>Hasta:
-                            <span id="hastaValor_edad"></span>
-                        </p>
-                    </div>
-
-                    <div class="flex-container">
-                        <button class="filtroRango_edad">Buscar</button>
-                        <button class="borrarFiltros_edad">Borrar FIltros</button>
-                    </div>
-
-                </article>
-
-                <article class="flex-cont-index ver">
-                    <div class="flex-item">
-                        <p>Precio</p>
-                    </div>
-
-                    <div class="flex-item">
-                        <button class="verFiltros">
-                            <i class="fas fa-caret-up"></i>
-                        </button>
-                    </div>
-                </article>
-
-                <!--....................FILTRO PRECIO.............. -->
-                <article class="rango">
-                    <div class=" flex-container slidecontainer">
-                        <input type="range" min="0" max="500000" value="0" class="slider" id="desde">
-                        <input type="range" min="500000" max="1000000" value="1000000" class="slider" id="hasta">
-                    </div>
-                    <div class="flex-container">
-                        <p>Desde:
-                            <span id="desdeValor"></span>
-                        </p>
-                        <p>Hasta:
-                            <span id="hastaValor"></span>
-                        </p>
-                    </div>
-
-                    <div class="flex-container">
-                        <button class="filtroRango">Buscar</button>
-                        <button class="borrarFiltros">Borrar FIltros</button>
-                    </div>
-
-                </article>
-
-
-
-            </article>
-        </section>
-
-        <section class="flex-item der">
-            <section class="flex-container">
-                <div class="flex-item">
-                    <p>GENÉTICA / Embriones</p>
-                </div>
-
-                <div class="flex-item">
-
-                    <div class="flex-cont-index">
-                        <p>Ordenar:</p>
-                        <select>
-                            <option value="asc">Precio Ascendente</option>
-                            <option value="des">Precio Descendente</option>
-                        </select>
-                    </div>
-
-                </div>
-
-                <div class="flex-item">
-                    <div class="flex-cont-index">
-                        <p>Ver</p>
-                        <div>
-                            <!--....................FILTRO SEXO.............. -->
-
-                            <a href="/genetica/terneras?sexo=Hembra">
-                                <i class="fas fa-mars"></i>
-                            </a>
-                            <a href="/genetica/terneras?sexo=Macho">
-                                <i class="fas fa-venus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="productos">
-
-                {{#each Embriones}}
-                <article data-id="{{this._id}}">
-                    <a href="/genetica/terneras/{{_id}}">
-
-                        <div class="img-info">
-                            <img src="{{imagen}}">
-                        </div>
-                        <h1>{{marca}} {{modelo}}</h1>
-                        <div class="flex-container info">
-                            <h1>{{nombre}} {{numero}}</h1>
-                        </div>
-                    </a>
-                    <div>
-                        <button class="agregar"> Planear Visita</button>
-                    </div>
-                </article>
-                {{/each}}
-            </section>
-
-
-        </section>
-
-
-
-    </section>
-    </section>
-
-
+  
     <footer>
-        <section class="contacto">
-            <h3>MANTENTE EN CONTACTO</h3>
-            <p>Suscríbete para recibir nuestra última información</p>
-        </section>
-
-        <section>
-            <form>
-                <input type="text" id="correoo" name="correo" placeholder="Tu correo..">
-                <input type="submit" value="ENVIAR">
-            </form>
-        </section>
         <section>
             <div class="sombra">
                 <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
@@ -289,34 +85,22 @@
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-google-plus-square"></i>
             </div>
-        </section>
-         <section class="desarrolladoPor">
-            <div>
-                <p> Design by: <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:<a href="https://www.behance.net/jaime_burb0681" target="_blank"> Jaime Burbano</a></p>
+
+            <div class="desarrolladoPor">
+                <p> Design by:
+                    <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
+                    <a href="https://www.behance.net/jaime_burb0681" target="_blank">
+                        Jaime Burbano</a>
+                </p>
             </div>
         </section>
+
     </footer>
 
-    <script src="/javascript/filtro_precio.js"></script>
-    <script src="/javascript/filtro_edad.js"></script>
 
- <script>
-
-        var boton = document.querySelector(".cerrarConstruccion");
-        var construccion = document.querySelector(".construccion");
-        console.log(boton);
-    function cerrarMensaje () {
-
-            if (!boton) {
-                alert("no existe");
-            } else {
-                padre = construccion.parentNode;
-                padre.removeChild(construccion);
-            }
-        }
-    </script>
-
-
+    <script src="/javascript/jquery-3.3.1.js"></script>
+<script src="/javascript/sweetalert2.all.js"></script>
+    <script src="/javascript/menu responsive.js"></script>
 
 </body>
 

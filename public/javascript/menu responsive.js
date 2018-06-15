@@ -22,3 +22,15 @@ function main () {
 		$(this).children('.children').slideToggle();
 	});
 }
+
+
+
+
+
+////////////////////////////////
+swal({
+	type:'warning',
+	title:'EL SITIO WEB ESTÁ EN CONSTRUCCIÓN',
+	text:'Lamentamos las molestias. Para mayor informacion contactenos.',
+	timer:6000,
+  });
