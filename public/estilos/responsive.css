@@ -131,6 +131,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  h1 {
+    font-size: 25px;
+  }
   h2 {
     color: #F7931E;
     border-bottom: solid 2px #F7931E;
