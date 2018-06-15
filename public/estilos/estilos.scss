@@ -86,9 +86,8 @@ header {
                         font-weight: 700;
                         color: $grisO;
                         font-size: 14px;
-                        display: block;
                         text-align: left;
-                        color: $blancoA;
+                        color: $grisO;
                     a {
                         text-decoration: none;
                         font-weight: 700;
@@ -116,6 +115,8 @@ header {
                 }
                 li:hover {
                     background: $gris;
+                    color: $blancoA;
+
                     a {
                         color: $blancoA;
                     }

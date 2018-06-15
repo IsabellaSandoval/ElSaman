@@ -81,9 +81,8 @@ header nav .con-menu ul li {
   font-weight: 700;
   color: #727272;
   font-size: 14px;
-  display: block;
   text-align: left;
-  color: #FCFCFC;
+  color: #727272;
 }
 
 header nav .con-menu ul li a {
@@ -116,6 +115,7 @@ header nav .con-menu ul li ul li a {
 
 header nav .con-menu ul li:hover {
   background: #c4c4c4;
+  color: #FCFCFC;
 }
 
 header nav .con-menu ul li:hover a {
