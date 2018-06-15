@@ -26,17 +26,16 @@ html {
 
 body {
     background-color: $blancoA;
-    height: calc(100% - 190px) !important;
+    height: calc(100% - 120px) !important;
 }
 
 #contenido {
-    min-height: calc(100% - 247px) !important;
+    min-height: calc(100% - 200px) !important;
 }
 
 .con-menu {
     margin: 0.5% 3%;
 }
-
 
 header {
     background: $blancoA;
@@ -53,15 +52,14 @@ header {
             display: inline-block;
             margin-left: 6%;
             margin-top: 2%;
-            a{
-                img{
+            a {
+                img {
                     width: 100%;
                 }
             }
         }
         .menu-bar {
             display: none;
-
             .fas {
                 color: $naranja;
                 text-decoration: none;
@@ -69,11 +67,10 @@ header {
                 font-size: 20px;
             }
         }
-        .con-menu{
-            width:76%;
+        .con-menu {
+            width: 76%;
             display: inline-block;
             text-align: right;
-
             ul {
                 list-style: none;
                 li {
@@ -83,11 +80,11 @@ header {
                     padding: 10px;
                     box-sizing: border-box;
                     text-decoration: none;
-                        font-weight: 700;
-                        color: $grisO;
-                        font-size: 14px;
-                        text-align: left;
-                        color: $grisO;
+                    font-weight: 700;
+                    color: $grisO;
+                    font-size: 14px;
+                    text-align: left;
+                    color: $grisO;
                     a {
                         text-decoration: none;
                         font-weight: 700;
@@ -106,7 +103,7 @@ header {
                             display: block;
                             overflow: hidden;
                             transform: translateX(-20px);
-                            a{
+                            a {
                                 display: block;
                                 color: $grisO;
                             }
@@ -116,20 +113,19 @@ header {
                 li:hover {
                     background: $gris;
                     color: $blancoA;
-
                     a {
                         color: $blancoA;
                     }
                     ul {
                         display: block;
-                        li{
-                            a{
+                        li {
+                            a {
                                 color: $grisO;
-                                display: block;  
+                                display: block;
                             }
                         }
-                        li:hover{
-                            a{
+                        li:hover {
+                            a {
                                 color: $blancoA;
                             }
                         }
@@ -139,7 +135,6 @@ header {
         }
     }
 }
-
 
 .banner {
     padding-top: 30px;
@@ -171,7 +166,6 @@ section {
             margin-left: 7%;
             width: 60%;
         }
-        
         .imagen {
             margin: 0 !important;
             width: 100%;
@@ -269,6 +263,70 @@ footer {
         }
         a:hover {
             color: $naranja;
+        }
+    }
+}
+
+/* Nosotros */
+
+.cont {
+    padding-top: 140px;
+    section {
+        width: 100%;
+        text-align: center;
+        padding: 0 5%;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        article {
+            width: 40%;
+            border: none;
+            div {
+                margin: 0 20px;
+                .fas {
+                    color: $naranja;
+                    font-size: 80px;
+                }
+                h1 {
+                    font-size: 60px;
+                }
+                h2 {
+                    text-align: left;
+                }
+                p {
+                    text-align: justify;
+                    color: $grisO;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        article:last-child {
+            width: 60%;
+            border-left: solid 4px $naranja;
+            padding-left: 20px;
+        }
+    }
+    .quienessomos {
+        justify-content: center;
+        margin-top: 2%;
+    }
+    .queproducimos {
+        article {
+            div {
+                border-left: solid 4px $naranja;
+                padding-left: 30px;
+            }
+        }
+
+        article:first-child {
+            width: 40%;
+            div {
+                border: none;
+            }
+        }
+        article:last-child {
+            border: none;
+            width: 60%;
         }
     }
 }

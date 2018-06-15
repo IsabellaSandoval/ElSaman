@@ -20,7 +20,6 @@ $negro: #474747;
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 1290px) {
@@ -81,8 +80,7 @@ $negro: #474747;
                 height: 100%;
                 position: fixed;
                 margin: 0;
-                top: 65px;
-                //overflow: scroll;
+                top: 65px; //overflow: scroll;
                 background: $naranja;
                 right: 100%;
                 z-index: -1;
@@ -93,7 +91,6 @@ $negro: #474747;
                         margin: 0;
                         padding: 20px;
                         color: $blancoA;
-
                         a {
                             display: block;
                             color: $blancoA;
@@ -149,7 +146,6 @@ $negro: #474747;
     }
 }
 
-
 @media screen and (max-width: 550px) {
     .contenido {
         section {
@@ -159,19 +155,17 @@ $negro: #474747;
                     width: 80%;
                 }
             }
-            article{
+            article {
                 margin: 0 7%;
-                width:100%;
+                width: 100%;
             }
         }
         section:nth-child(3) {
             article {
                 margin: 0 7%;
             }
-            
         }
     }
-    
     footer {
         margin-top: 10px;
         section {
@@ -185,20 +179,17 @@ $negro: #474747;
             }
         }
     }
-    
 }
 
 //Celular Largo
 @media screen and (max-width: 550px) {
-    
-    h1{
-font-size: 25px;
+    h1 {
+        font-size: 25px;
     }
-    h2{
+    h2 {
         color: $naranja;
         border-bottom: solid 2px $naranja;
     }
-
     section {
         article {
             .info {
@@ -208,7 +199,6 @@ font-size: 25px;
             }
         }
     }
-
     footer {
         margin-top: 15px;
         section {
@@ -223,5 +213,44 @@ font-size: 25px;
             }
         }
     }
+}
 
+/* --------------------------->  NOSOTROS  <---------------------------*/
+
+//Lapto Large
+@media screen and (max-width: 1140px) {
+    .cont {
+        section {
+            article{
+                div{
+                    .fas{
+                        font-size: 70px;
+                    }
+                    h1 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cont{
+        .quienessomos{
+            article:first-child{
+                width: 30%;
+            }
+            article:last-child{
+                width: 70%;
+            }
+        }
+
+        .queproducimos{
+            article:first-child{
+                width: 30%;
+            }
+            article:last-child{
+                width: 70%;
+            }
+        }
+    }
 }

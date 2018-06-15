@@ -151,4 +151,26 @@
     font-size: 25px;
   }
 }
+
+/* --------------------------->  NOSOTROS  <---------------------------*/
+@media screen and (max-width: 1140px) {
+  .cont section article div .fas {
+    font-size: 70px;
+  }
+  .cont section article div h1 {
+    font-size: 40px;
+  }
+  .cont .quienessomos article:first-child {
+    width: 30%;
+  }
+  .cont .quienessomos article:last-child {
+    width: 70%;
+  }
+  .cont .queproducimos article:first-child {
+    width: 30%;
+  }
+  .cont .queproducimos article:last-child {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */

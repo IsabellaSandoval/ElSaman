@@ -14,11 +14,11 @@ html {
 
 body {
   background-color: #FCFCFC;
-  height: calc(100% - 190px) !important;
+  height: calc(100% - 120px) !important;
 }
 
 #contenido {
-  min-height: calc(100% - 247px) !important;
+  min-height: calc(100% - 200px) !important;
 }
 
 .con-menu {
@@ -276,6 +276,77 @@ footer .desarrolladoPor a {
 
 footer .desarrolladoPor a:hover {
   color: #F7931E;
+}
+
+/* Nosotros */
+.cont {
+  padding-top: 140px;
+}
+
+.cont section {
+  width: 100%;
+  text-align: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+}
+
+.cont section article {
+  width: 40%;
+  border: none;
+}
+
+.cont section article div {
+  margin: 0 20px;
+}
+
+.cont section article div .fas {
+  color: #F7931E;
+  font-size: 80px;
+}
+
+.cont section article div h1 {
+  font-size: 60px;
+}
+
+.cont section article div h2 {
+  text-align: left;
+}
+
+.cont section article div p {
+  text-align: justify;
+  color: #727272;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.cont section article:last-child {
+  width: 60%;
+  border-left: solid 4px #F7931E;
+  padding-left: 20px;
+}
+
+.cont .quienessomos {
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.cont .queproducimos article div {
+  border-left: solid 4px #F7931E;
+  padding-left: 30px;
+}
+
+.cont .queproducimos article:first-child {
+  width: 40%;
+}
+
+.cont .queproducimos article:first-child div {
+  border: none;
+}
+
+.cont .queproducimos article:last-child {
+  border: none;
+  width: 60%;
 }
 
 /* Visualización de Articulos */
