@@ -292,7 +292,7 @@ footer .desarrolladoPor a:hover {
 }
 
 .cont section article {
-  width: 40%;
+  width: 50%;
   border: none;
 }
 
@@ -321,7 +321,6 @@ footer .desarrolladoPor a:hover {
 }
 
 .cont section article:last-child {
-  width: 60%;
   border-left: solid 4px #F7931E;
   padding-left: 20px;
 }
@@ -331,13 +330,13 @@ footer .desarrolladoPor a:hover {
   margin-top: 2%;
 }
 
+.cont .queproducimos article {
+  width: 55%;
+}
+
 .cont .queproducimos article div {
   border-left: solid 4px #F7931E;
   padding-left: 30px;
-}
-
-.cont .queproducimos article:first-child {
-  width: 40%;
 }
 
 .cont .queproducimos article:first-child div {

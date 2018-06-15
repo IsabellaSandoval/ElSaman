@@ -278,7 +278,7 @@ footer {
         box-sizing: border-box;
         margin-bottom: 5%;
         article {
-            width: 40%;
+            width: 50%;
             border: none;
             div {
                 margin: 0 20px;
@@ -301,7 +301,6 @@ footer {
             }
         }
         article:last-child {
-            width: 60%;
             border-left: solid 4px $naranja;
             padding-left: 20px;
         }
@@ -312,6 +311,8 @@ footer {
     }
     .queproducimos {
         article {
+            width: 55%;
+
             div {
                 border-left: solid 4px $naranja;
                 padding-left: 30px;
@@ -319,7 +320,6 @@ footer {
         }
 
         article:first-child {
-            width: 40%;
             div {
                 border: none;
             }
