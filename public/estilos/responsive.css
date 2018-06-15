@@ -52,10 +52,9 @@
   header nav .con-menu {
     width: 50%;
     height: 100%;
-    height: calc(100% - 80px);
     position: fixed;
     margin: 0;
-    top: 80px;
+    top: 65px;
     background: #F7931E;
     right: 100%;
     z-index: -1;
