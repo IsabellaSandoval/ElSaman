@@ -595,51 +595,6 @@ footer .desarrolladoPor a:hover {
   text-align: center;
 }
 
-.construccion {
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  right: 10px;
-  background: #F7931E;
-  width: 15%;
-  padding: 20px;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
-}
-
-.construccion div {
-  margin: 5px 0;
-}
-
-.construccion div h1 {
-  color: #FCFCFC;
-  font-size: 20px;
-}
-
-.construccion div p {
-  text-align: justify;
-}
-
-.construccion div p a {
-  color: #FCFCFC;
-  text-decoration: none;
-}
-
-.construccion div p a:hover {
-  text-decoration: underline;
-}
-
-.construccion button {
-  display: flex;
-  background: none;
-  border: none;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-left: 90%;
-  text-align: right;
-  color: #FCFCFC;
-}
-
 .flex-cont-index {
   display: flex;
   flex-direction: row;

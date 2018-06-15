@@ -20,9 +20,7 @@ $negro: #474747;
             }
         }
     }
-    .construccion {
-        width: 17%;
-    }
+    
 }
 
 @media screen and (max-width: 1290px) {
@@ -150,8 +148,31 @@ $negro: #474747;
     }
 }
 
+
 @media screen and (max-width: 550px) {
+    .contenido {
+        section {
+            .imagen {
+                display: none;
+                img {
+                    width: 80%;
+                }
+            }
+            article{
+                margin: 0 7%;
+                width:100%;
+            }
+        }
+        section:nth-child(3) {
+            article {
+                margin: 0 7%;
+            }
+            
+        }
+    }
+    
     footer {
+        margin-top: 10px;
         section {
             .sombra {
                 h3 {
@@ -160,11 +181,42 @@ $negro: #474747;
                 .fab {
                     font-size: 25px;
                 }
-                .desarrolladoPor {}
             }
         }
     }
-    .construccion {
-        display: none;
+    
+}
+
+//Celular Largo
+@media screen and (max-width: 550px) {
+    h2{
+        color: $naranja;
+        border-bottom: solid 2px $naranja;
     }
+
+    section {
+        article {
+            .info {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 15px;
+        section {
+            .sombra {
+                h3 {
+                    font-size: 15px;
+                    letter-spacing: .2px;
+                }
+                .fab {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
 }
