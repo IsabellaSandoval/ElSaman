@@ -20,50 +20,59 @@
 </head>
 
 <body>
-    <header class="flex-container">
-        <div class="logo">
-            <a href="/">
-                <img src="/imagenes/logo.png" alt="" srcset="">
-            </a>
-        </div>
-
-        <div class="menu-bar">
-            <a href="#" class="btn_menu">
-                <i class="fas fa-bars"></i> </a>
-        </div>
-
-
+    <header class="">
         <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/imagenes/logo.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="menu-bar">
+                <a href="#" class="btn_menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
             <div class="con-menu">
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="/nosotros">NOSOTROS</a>
-                </div>
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="/servicios">SERVICIOS</a>
-                    <div class="dropdown-content">
-                        <a href="/genetica/embriones">Venta de Ganado</a>
-                        <a href="#">Asesoría Técnica</a>
-                    </div>
-                </div>
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">GENÉTICA</a>
-                    <div class="dropdown-content">
-                        <a href="/genetica/embriones">Embriones</a>
-                        <a href="/genetica/terneras">Terneras</a>
-                        <a href="/genetica/novillas">Novillas</a>
-                    </div>
-                </div>
-
-
-                <div class="dropdown">
-                    <a class="dropbtn" href="/contacto">CONTACTO</a>
-                </div>
-
+                <ul>
+                    <li>
+                        <a href="/nosotros">NOSOTROS</a>
+                    </li>
+                    <li>
+                        <a href="">SERVICIOS</a>
+                        <ul>
+                            <li>
+                                <a href="#">Venta de Ganado</a>
+                            </li>
+                            <li>
+                                <a href="/servicios/asesoriatecnica">Asesoría Técnica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">GÉNETICA</a>
+                        <ul>
+                            <li>
+                                <a href="/genetica/embriones">Embriones</a>
+                            </li>
+                            <li>
+                                <a href="/genetica/terneras">Terneras</a>
+                            </li>
+                            <li>
+                                <a href="/genetica/novillas">Novillas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contacto">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+
+
     </header>
 
     <section class="banner">
