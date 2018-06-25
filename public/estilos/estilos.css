@@ -224,7 +224,7 @@ h2 {
 h3 {
   font-family: "Nunito", "sans-serif";
   color: #FCFCFC;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 footer {
@@ -262,7 +262,7 @@ footer .sombra .fab:hover {
 }
 
 footer .desarrolladoPor {
-  background: #000;
+  background: #ac5e05;
   font-size: 12px;
   letter-spacing: 0;
   padding: 2px 0;
