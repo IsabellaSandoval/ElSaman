@@ -81,6 +81,10 @@ html body #contenido {
   background: #f0f0f0;
 }
 
+.container header nav div div:nth-child(2) .collapse .in {
+  height: 900px;
+}
+
 /*----------------------------    Nosotros      --------------------------*/
 #nosotros article h1 {
   font-family: "Lato", sans-serif;
