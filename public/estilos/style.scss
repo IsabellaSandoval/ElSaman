@@ -26,7 +26,7 @@ html {
         background-color: $blancoA;
         height: calc(100% - 90px) !important;
         #contenido {
-            margin-top: 180px;
+            margin-top: 90px;
             min-height: calc(100% - 90px) !important;
         }
     }
@@ -40,6 +40,11 @@ html {
             height: 90px;
             background: #FCFCFC;
             div {
+                div:nth-child(1) {
+                    a {
+                        margin-left: 20px;
+                    }
+                }
                 div:nth-child(2) {
                     ul {
                         .principal {
@@ -61,7 +66,7 @@ html {
                                         padding-bottom: 10px;
                                         color: $grisO;
                                     }
-                                    a:hover{
+                                    a:hover {
                                         background: transparent;
                                     }
                                 }
@@ -76,13 +81,13 @@ html {
                                 color: $blancoA !important;
                                 background: transparent !important;
                             }
-                            .secundario{
-                                li{
-                                    a{
+                            .secundario {
+                                li {
+                                    a {
                                         color: $grisO !important;
                                     }
                                 }
-                                li:hover{
+                                li:hover {
                                     background: rgb(240, 240, 240);
                                 }
                             }
@@ -101,7 +106,7 @@ html {
         h1 {
             font-family: $lato;
             font-weight: 900;
-            font-size: 60px;
+            font-size: 45px;
             color: $naranja;
             margin-bottom: 80px;
         }
@@ -121,8 +126,11 @@ html {
             transition: all .4s;
             box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
             margin-bottom: 50px;
+            height: 400px;
             div:first-child {
                 text-align: center;
+                margin-top: 20px;
+                margin-bottom: 50px;
                 img {
                     filter: grayscale(100%);
                 }
@@ -133,6 +141,9 @@ html {
                     font-family: $lato;
                     font-size: 17px;
                     color: $gris;
+                }
+                p {
+                    margin: 0 20px;
                 }
             }
         }
@@ -149,6 +160,56 @@ html {
             div:last-child {
                 h3 {
                     color: $naranja;
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:1200px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 45px;
+                    }
+                    .card {
+                        height: 400px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 35px;
+                    }
+                    .card {
+                        height: 450px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:768px) and (max-width:991px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 30px;
+                    }
+                    .card {
+                        height: 280px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (max-width:767px) {
+            
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 20px;
+                    }
+                    .card {
+                        height: 300px;
+                        border: solid 1px $grisO;
+                    }
                 }
             }
         }

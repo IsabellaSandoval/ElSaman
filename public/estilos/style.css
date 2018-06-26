@@ -18,7 +18,7 @@ html body {
 }
 
 html body #contenido {
-  margin-top: 180px;
+  margin-top: 90px;
   min-height: calc(100% - 90px) !important;
 }
 
@@ -26,6 +26,10 @@ html body #contenido {
 .container header nav {
   height: 90px;
   background: #FCFCFC;
+}
+
+.container header nav div div:nth-child(1) a {
+  margin-left: 20px;
 }
 
 .container header nav div div:nth-child(2) ul .principal {
@@ -81,7 +85,7 @@ html body #contenido {
 #nosotros article h1 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 45px;
   color: #F7931E;
   margin-bottom: 80px;
 }
@@ -101,10 +105,13 @@ html body #contenido {
   transition: all .4s;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
+  height: 400px;
 }
 
 #nosotros article .card div:first-child {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 #nosotros article .card div:first-child img {
@@ -116,6 +123,10 @@ html body #contenido {
   font-family: "Lato", sans-serif;
   font-size: 17px;
   color: #c4c4c4;
+}
+
+#nosotros article .card div:last-child p {
+  margin: 0 20px;
 }
 
 #nosotros article .card:hover {
@@ -134,6 +145,43 @@ html body #contenido {
 
 #nosotros article .card:hover div:last-child h3 {
   color: #F7931E;
+}
+
+@media screen and (min-width: 1200px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 45px;
+  }
+  #nosotros article #nosotros article .card {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 35px;
+  }
+  #nosotros article #nosotros article .card {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 30px;
+  }
+  #nosotros article #nosotros article .card {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 20px;
+  }
+  #nosotros article #nosotros article .card {
+    height: 300px;
+    border: solid 1px #727272;
+  }
 }
 
 /*----------------------------    Footer      --------------------------*/
