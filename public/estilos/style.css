@@ -89,118 +89,21 @@ html body #contenido {
   height: 900px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  background: #FCFCFC;
-  padding: 0;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (max-width: 767px) {
-  background: #FCFCFC;
-  padding: 0;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
-}
-
-/*----------------------------    Nosotros      --------------------------*/
-#nosotros article h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 45px;
-  color: #F7931E;
-  margin-bottom: 80px;
-}
-
-#nosotros article div p {
-  font-family: "Nunito", "sans-serif";
-  color: #474747;
-  letter-spacing: 1;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-#nosotros article .card {
-  background: #fff;
-  padding: 20px 0;
-  opacity: .8;
-  transition: all .4s;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 50px;
-  height: 400px;
-}
-
-#nosotros article .card div:first-child {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-#nosotros article .card div:first-child img {
-  filter: grayscale(100%);
-}
-
-#nosotros article .card div:last-child h3 {
-  font-weight: 900;
-  font-family: "Lato", sans-serif;
-  font-size: 17px;
-  color: #c4c4c4;
-}
-
-#nosotros article .card div:last-child p {
-  margin: 0 20px;
-}
-
-#nosotros article .card:hover {
-  opacity: 1;
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
-  background: #f8f8f8;
-}
-
-#nosotros article .card:hover div:first-child {
-  text-align: center;
-}
-
-#nosotros article .card:hover div:first-child img {
-  filter: grayscale(0);
-}
-
-#nosotros article .card:hover div:last-child h3 {
-  color: #F7931E;
-}
-
-@media screen and (min-width: 1200px) {
-  #nosotros article #nosotros article h1 {
-    font-size: 45px;
+@media screen and (max-width: 992px) {
+  .container header nav {
+    height: 90px;
+    background: #FCFCFC;
   }
-  #nosotros article #nosotros article .card {
-    height: 400px;
+  .container header nav div div:nth-child(2) {
+    background: #FCFCFC;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
   }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  #nosotros article #nosotros article h1 {
-    font-size: 35px;
+  .container header nav div div:nth-child(2) ul {
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  #nosotros article #nosotros article .card {
-    height: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  #nosotros article #nosotros article h1 {
-    font-size: 30px;
-  }
-  #nosotros article #nosotros article .card {
-    height: 280px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #nosotros article #nosotros article h1 {
-    font-size: 20px;
-  }
-  #nosotros article #nosotros article .card {
-    height: 300px;
-    border: solid 1px #727272;
+  .container header nav div div:nth-child(2) ul .principal {
+    padding: 0;
   }
 }
 
@@ -263,7 +166,7 @@ footer .desarrolladoPor a:hover {
 
 /*----------------------------    Generales      --------------------------*/
 .active {
-  background: #F7931E !important;
+  background: #ac5e05 !important;
 }
 
 .active a {
@@ -273,5 +176,222 @@ footer .desarrolladoPor a:hover {
 
 .active .secundario {
   border: none !important;
+}
+
+/*----------------------------    Nosotros      --------------------------*/
+#nosotros article h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  color: #F7931E;
+  margin-bottom: 80px;
+}
+
+#nosotros article div p {
+  font-family: "Nunito", "sans-serif";
+  color: #474747;
+  letter-spacing: 1;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#nosotros article .card {
+  background: #fff;
+  padding: 20px 0;
+  opacity: .8;
+  transition: all .4s;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  height: 400px;
+  width: 325px;
+}
+
+#nosotros article .card div:first-child {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#nosotros article .card div:first-child img {
+  filter: grayscale(100%);
+}
+
+#nosotros article .card div:last-child h3 {
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #c4c4c4;
+}
+
+#nosotros article .card div:last-child p {
+  margin: 0 20px;
+}
+
+#nosotros article .card:hover {
+  opacity: 1;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  background: #f8f8f8;
+}
+
+#nosotros article .card:hover div:first-child {
+  text-align: center;
+}
+
+#nosotros article .card:hover div:first-child img {
+  filter: grayscale(0);
+}
+
+#nosotros article .card:hover div:last-child h3 {
+  color: #F7931E;
+}
+
+@media screen and (min-width: 1200px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 45px;
+  }
+  #nosotros article #nosotros article:not(:first-of-type) .card {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 35px;
+  }
+  #nosotros article #nosotros article:not(:first-of-type) .card {
+    height: 450px;
+    width: 265px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 30px;
+  }
+  #nosotros article #nosotros article:not(:first-of-type) .card {
+    height: 280px;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #nosotros article #nosotros article h1 {
+    font-size: 20px;
+  }
+  #nosotros article #nosotros article article:not(:first-of-type) .card {
+    height: 300px;
+    width: 630px;
+    border: solid 1px #727272;
+  }
+}
+
+/*----------------------------    Venta de Ganado      --------------------------*/
+#ventaGanado article div {
+  margin-bottom: 80px;
+}
+
+#ventaGanado article div h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  color: #F7931E;
+}
+
+#ventaGanado article div p {
+  font-family: "Nunito", "sans-serif";
+  color: #474747;
+  letter-spacing: 1;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#ventaGanado article .card {
+  background: #fff;
+  padding: 20px 0;
+  opacity: .8;
+  transition: all .4s;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  height: 400px;
+}
+
+#ventaGanado article .card a {
+  text-decoration: none;
+}
+
+#ventaGanado article .card a div:first-child {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#ventaGanado article .card a div:first-child img {
+  filter: grayscale(100%);
+}
+
+#ventaGanado article .card a div:last-child h3 {
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #c4c4c4;
+}
+
+#ventaGanado article .card a div:last-child p {
+  margin: 0 20px;
+}
+
+#ventaGanado article .card:hover {
+  opacity: 1;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  background: #f8f8f8;
+}
+
+#ventaGanado article .card:hover a div:first-child {
+  text-align: center;
+}
+
+#ventaGanado article .card:hover a div:first-child img {
+  filter: grayscale(0);
+}
+
+#ventaGanado article .card:hover a div:last-child h3 {
+  color: #F7931E;
+}
+
+@media screen and (min-width: 1200px) {
+  #ventaGanado article #ventaGanado article h1 {
+    font-size: 45px;
+  }
+  #ventaGanado article #ventaGanado article .card {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #ventaGanado article #ventaGanado article h1 {
+    font-size: 35px;
+  }
+  #ventaGanado article #ventaGanado article .card {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #ventaGanado article #ventaGanado article h1 {
+    font-size: 30px;
+  }
+  #ventaGanado article #ventaGanado article .card {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ventaGanado article #ventaGanado article h1 {
+    font-size: 20px;
+  }
+  #ventaGanado article #ventaGanado article .card {
+    height: 300px;
+    border: solid 1px #727272;
+  }
 }
 /*# sourceMappingURL=style.css.map */

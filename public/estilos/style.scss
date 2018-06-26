@@ -39,10 +39,9 @@ html {
         nav {
             height: 90px;
             background: #FCFCFC;
-            
             div {
                 div:nth-child(1) {
-                    button{
+                    button {
                         margin: 25px;
                     }
                     a {
@@ -50,7 +49,6 @@ html {
                     }
                 }
                 div:nth-child(2) {
-
                     ul {
                         .principal {
                             padding: 20px 5px;
@@ -98,147 +96,35 @@ html {
                             }
                         }
                     }
-                    .collapse{
-                        .in{
+                    .collapse {
+                        .in {
                             height: 900px;
                         }
                     }
                 }
-
             }
         }
     }
 }
 
-
-//SM Screen
-@media screen and (min-width:768px) and (max-width:991px) {
-    background: #FCFCFC;
-    padding: 0;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
-
-} 
-//XS Screen
-@media screen and (max-width:767px) {
-    background: #FCFCFC;
-    padding: 0;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
-
-
-}
-
-
-/*----------------------------    Nosotros      --------------------------*/
-
-#nosotros {
-    article {
-        h1 {
-            font-family: $lato;
-            font-weight: 900;
-            font-size: 45px;
-            color: $naranja;
-            margin-bottom: 80px;
-        }
-        div {
-            p {
-                font-family: $nunito;
-                color: $negro;
-                letter-spacing: 1;
-                font-size: 15px;
-                margin-bottom: 15px;
-            }
-        }
-        .card {
-            background: #fff;
-            padding: 20px 0;
-            opacity: .8;
-            transition: all .4s;
-            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
-            margin-bottom: 50px;
-            height: 400px;
-            div:first-child {
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 50px;
-                img {
-                    filter: grayscale(100%);
-                }
-            }
-            div:last-child {
-                h3 {
-                    font-weight: 900;
-                    font-family: $lato;
-                    font-size: 17px;
-                    color: $gris;
-                }
-                p {
-                    margin: 0 20px;
-                }
-            }
-        }
-        .card:hover {
-            opacity: 1;
-            box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
-            background: #f8f8f8;
-            div:first-child {
-                text-align: center;
-                img {
-                    filter: grayscale(0);
-                }
-            }
-            div:last-child {
-                h3 {
-                    color: $naranja;
-                }
-            }
-        }
-         //XS Screen
-        @media screen and (min-width:1200px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 45px;
-                    }
-                    .card {
-                        height: 400px;
-                    }
-                }
-            }
-        } //XS Screen
-        @media screen and (min-width:992px) and (max-width:1199px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 35px;
-                    }
-                    .card {
-                        height: 450px;
-                    }
-                }
-            }
-        } //XS Screen
-        @media screen and (min-width:768px) and (max-width:991px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 30px;
-                    }
-                    .card {
-                        height: 280px;
-                    }
-                }
-            }
-        } //XS Screen
-        @media screen and (max-width:767px) {
-            
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 20px;
-                    }
-                    .card {
-                        height: 300px;
-                        border: solid 1px $grisO;
+//XS y SM Screen
+@media screen and (max-width:992px) {
+    .container {
+        header {
+            nav {
+                height: 90px;
+                background: #FCFCFC;
+                div {
+                    div:nth-child(2) {
+                        background: #FCFCFC;
+                        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                        ul {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            .principal {
+                                padding: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -299,14 +185,258 @@ footer {
 /*----------------------------    Generales      --------------------------*/
 
 .active {
-    background: $naranja !important;
-    a{
+    background: rgb(172, 94, 5) !important;
+    a {
         background-color: transparent !important;
         color: $blancoA !important;
     }
-    .secundario{
+    .secundario {
         border: none !important;
     }
-    
 }
 
+/*----------------------------    Nosotros      --------------------------*/
+
+#nosotros {
+    article {
+        h1 {
+            font-family: $lato;
+            font-weight: 900;
+            font-size: 45px;
+            color: $naranja;
+            margin-bottom: 80px;
+        }
+        div {
+            p {
+                font-family: $nunito;
+                color: $negro;
+                letter-spacing: 1;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        .card {
+            background: #fff;
+            padding: 20px 0;
+            opacity: .8;
+            transition: all .4s;
+            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 50px;
+            height: 400px;
+            width: 325px;
+            div:first-child {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                img {
+                    filter: grayscale(100%);
+                }
+            }
+            div:last-child {
+                h3 {
+                    font-weight: 900;
+                    font-family: $lato;
+                    font-size: 17px;
+                    color: $gris;
+                }
+                p {
+                    margin: 0 20px;
+                }
+            }
+        }
+        .card:hover {
+            opacity: 1;
+            box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+            background: #f8f8f8;
+            div:first-child {
+                text-align: center;
+                img {
+                    filter: grayscale(0);
+                }
+            }
+            div:last-child {
+                h3 {
+                    color: $naranja;
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:1200px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 45px;
+                    }
+                }
+                article:not(:first-of-type) {
+                    .card {
+                        height: 400px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+                article:not(:first-of-type) {
+                    .card {
+                        height: 450px;
+                        width: 265px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:768px) and (max-width:991px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+                article:not(:first-of-type) {
+                    .card {
+                        height: 280px;
+                        width: 800px;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (max-width:767px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 20px;
+                    }
+                    article:not(:first-of-type) {
+                        .card {
+                            height: 300px;
+                            width: 630px;
+                            border: solid 1px $grisO;
+                        }
+                    }
+                }
+            }
+        }
+    }}
+    /*----------------------------    Venta de Ganado      --------------------------*/
+    #ventaGanado {
+        article {
+            div {
+                margin-bottom: 80px;
+                h1 {
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 45px;
+                    color: $naranja;
+                }
+                p {
+                    font-family: $nunito;
+                    color: $negro;
+                    letter-spacing: 1;
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+            .card {
+                background: #fff;
+                padding: 20px 0;
+                opacity: .8;
+                transition: all .4s;
+                box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+                margin-bottom: 50px;
+                height: 400px;
+                a {
+                    text-decoration: none;
+                    div:first-child {
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 50px;
+                        img {
+                            filter: grayscale(100%);
+                        }
+                    }
+                    div:last-child {
+                        h3 {
+                            font-weight: 900;
+                            font-family: $lato;
+                            font-size: 17px;
+                            color: $gris;
+                        }
+                        p {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+            .card:hover {
+                opacity: 1;
+                box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+                background: #f8f8f8;
+                a {
+                    div:first-child {
+                        text-align: center;
+                        img {
+                            filter: grayscale(0);
+                        }
+                    }
+                    div:last-child {
+                        h3 {
+                            color: $naranja;
+                        }
+                    }
+                }
+            } //XS Screen
+            @media screen and (min-width:1200px) {
+                #ventaGanado {
+                    article {
+                        h1 {
+                            font-size: 45px;
+                        }
+                        .card {
+                            height: 400px;
+                        }
+                    }
+                }
+            } //XS Screen
+            @media screen and (min-width:992px) and (max-width:1199px) {
+                #ventaGanado {
+                    article {
+                        h1 {
+                            font-size: 35px;
+                        }
+                        .card {
+                            height: 450px;
+                        }
+                    }
+                }
+            } //XS Screen
+            @media screen and (min-width:768px) and (max-width:991px) {
+                #ventaGanado {
+                    article {
+                        h1 {
+                            font-size: 30px;
+                        }
+                        .card {
+                            height: 280px;
+                        }
+                    }
+                }
+            } //XS Screen
+            @media screen and (max-width:767px) {
+                #ventaGanado {
+                    article {
+                        h1 {
+                            font-size: 20px;
+                        }
+                        .card {
+                            height: 300px;
+                            border: solid 1px $grisO;
+                        }
+                    }
+                }
+            }
+        }
+    }
