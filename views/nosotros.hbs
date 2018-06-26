@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>El Sáman | Nosotros</title>
-    <link rel="stylesheet" href="/estilos/estilos.css">
-    <link rel="stylesheet" href="/estilos/responsive.css">
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
     <!-- Font Awesome -->
@@ -17,170 +15,216 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
         crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/estilos/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/">
-                    <img src="/imagenes/logo.png" alt="" srcset="">
-                </a>
-            </div>
+    <div class="container">
+        </br>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top ">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                            <span class="sr-only">Menú</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-            <div class="menu-bar">
-                <a href="#" class="btn_menu">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
+                        <a href="/" class="navbar-brand">
+                            <img alt="El Saman" src="/imagenes/logo.png">
+                        </a>
+                    </div>
 
-            <div class="con-menu">
-                <ul>
-                    <li>
-                        <a href="/nosotros">NOSOTROS</a>
-                    </li>
-                    <li class="submenu">
-                        <a href="">SERVICIOS</a>
-                        <ul class="children">
-                            <li>
-                                <a href="#">Venta de Ganado</a>
+                    <div class="collapse navbar-collapse navbar-right" id="navbar-1">
+                        <ul class="nav navbar-nav">
+                            <li class="principal">
+                                <a href="/nosotros">NOSOTROS</a>
                             </li>
-                            <li>
-                                <a href="/servicios/asesoriatecnica">Asesoría Técnica</a>
+                            <li class="dropwdown principal">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">SERVICIOS
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu secundario">
+                                    <li><a href="">Venta de Ganado</a></li>
+                                    <li><a href="">Asesoría Técnica</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown principal">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"> GÉNETICA
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu secundario">
+                                    <li><a href="">Embriones</a></li>
+                                    <li><a href="">Terneras</a></li>
+                                    <li><a href="">Novillas</a></li>
+                                </ul>
+                            </li>
+                             <li class="principal">
+                                <a href="/contacto">CONTACTO</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="submenu">
-                        <a href="">GÉNETICA</a>
-                        <ul class="children">
-                            <li>
-                                <a href="/genetica/embriones">Embriones</a>
-                            </li>
-                            <li>
-                                <a href="/genetica/terneras">Terneras</a>
-                            </li>
-                            <li>
-                                <a href="/genetica/novillas">Novillas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
 
-    </header>
-
-    <section id="contenido" class="cont">
-
-        <section class="flex-container quienessomos">
-            <article class="flex-container ">
+    <section id="contenido" class="container">
+        <section id="nosotros">
+            <article>
+                <h1 class="text-center">¿QUIÉNES SOMOS?</h1>
                 <div>
-                    <i class="fas fa-users"></i>
+                    <p class="text-justify">La Hacienda El Samán está ubicada en el corregimiento de Nariño, municipio de Tuluá, en el valle geográfico
+                        del río Cauca a 980 metros sobre el nivel del mar, en un área que por tradición ha sido dedicada
+                        al cultivo de la caña de azúcar. El Samán cuenta con una extensión de 85 hectáreas, de las cuales
+                        6.4 están dedicadas a la ganadería desde los años 90´.</p>
                 </div>
                 <div>
-                    <h1>¿QUIENES SOMOS?</h1>
+                    <p class="text-justify">El desarrollo de la actividad ganadera de El Samán se ha realizado bajo la orientación profesional de
+                        sus propietarios, zootecnistas egresados de la Universidad Nacional de Colombia, vinculados al sector
+                        ganadero nacional.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-justify">La Hacienda está afiliada a la Asociación Colombiana de Criadores de Ganado Jersey “Asojersey” y actualmente
+                        cuenta con más de 40 ejemplares puros registrados, estando comprometida con la producción y desarrollo
+                        de ejemplares Jersey de alta selección genética, productividad y eficiencia en el trópico bajo.</p>
+                </div>
+                <div>
+                    <p class="text-justify">El desarrollo de la ganadería en cuanto a mejoramiento genético se logra mediante el uso de la inseminación
+                        artificial y la biotecnología de transferencia de embriones por los métodos convencional y de fertilización
+                        in vitro.</p>
                 </div>
             </article>
 
-            <article class="">
-                <div>
-                    <p class="">
-                        La Hacienda El Samán está ubicada en el corregimiento de Nariño, municipio de Tuluá, en el valle geográfico del río Cauca
-                        a 980 metros sobre el nivel del mar, en un área que por tradición ha sido dedicada al cultivo de
-                        la caña de azúcar. El Samán cuenta con una extensión de 85 hectáreas, de las cuales 6.4 están dedicadas
-                        a la ganadería desde los años 90´.
-                    </p>
-                    <p class="">
-                        El desarrollo de la actividad ganadera de El Samán se ha realizado bajo la orientación profesional de sus propietarios, zootecnistas
-                        egresados de la Universidad Nacional de Colombia, vinculados al sector ganadero nacional.
-                    </p>
-                    <p class="">
-                        La Hacienda está afiliada a la Asociación Colombiana de Criadores de Ganado Jersey “Asojersey” y actualmente cuenta con más
-                        de 40 ejemplares puros registrados, estando comprometida con la producción y desarrollo de ejemplares
-                        Jersey de alta selección genética, productividad y eficiencia en el trópico bajo.
-                    </p>
-                    <p class="">
-                        El desarrollo de la ganadería en cuanto a mejoramiento genético se logra mediante el uso de la inseminación artificial y
-                        la biotecnología de transferencia de embriones por los métodos convencional y de fertilización in
-                        vitro.
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <section class="flex-container queproducimos">
-            <article class="flex-container ">
-                <div>
-                    <i class="fas fa-dolly"></i>
-                </div>
-                <div>
-                    <h1>¿QUE PRODUCIMOS?</h1>
-                </div>
-            </article>
-
-            <article class="">
-                <div>
-                    <h2>LECHE</h2>
-                    <p class="">
-                        En La Hacienda El Samán nos dedicamos a la producción de leche de alto valor nutricional en lo que se refiere a solidos totales,
-                        grasa y proteína; de igual manera, la leche es de excelente calidad microbiológica, toda vez que
-                        se ordeña con equipo mecánico y unidad final al tanque, evitando contaminación del producto.
-                    </p>
-                </div>
-
-                <div>
-                    <h2>EJEMPLARES PUROS</h2>
-                    <p class="">
-                        Se ha seleccionado y reproducido ganado Jersey de óptima caracterización racial, resistencia, fertilidad y calidad de leche.
-                    </p>
-                </div>
-
-                <div>
-                    <h2>GANADO COMERCIAL</h2>
-                    <p class="">
-                        Se realizan cruzamientos de las vacas mestizas con Jersey para producir animales media sangre, obteniendo ejemplares con
-                        una excelente calidad y producción de leche en trópico bajo. </p>
-                </div>
+            <article class="row">
+                <h1 class="text-center">¿QUÉ PRODUCIMOS?</h1>
+                <article class="col-xs-12 col-sm-12 col-md-3 col-lg-3 card">
+                    <div>
+                        <img src="/imagenes/Leche.png" alt="Leche">
+                    </div>
+                    <div>
+                        <h3 class="text-center">LECHE</h3>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 card">
+                    <div>
+                        <img src="/imagenes/Puros.png" alt="Ejemplares Puros">
+                    </div>
+                    <div>
+                        <h3 class="text-center">EJEMPLARES PUROS</h3>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 card">
+                    <div>
+                        <img src="/imagenes/Ganado.png" alt="Ganado Comercial">
+                    </div>
+                    <div>
+                        <h3 class="text-center">GANADO COMERCIAL</h3>
+                    </div>
+                </article>
             </article>
         </section>
-
-
-
-
     </section>
 
-
-    <footer>
-        <section>
-            <div class="sombra">
-                <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
-
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-google-plus-square"></i>
-            </div>
-
-            <div class="desarrolladoPor">
-                <p> Design by:
-                    <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
-                    <a href="https://www.behance.net/jaime_burb0681" target="_blank">
-                        Jaime Burbano</a>
-                </p>
-            </div>
-        </section>
-
-    </footer>
+</body>
 
 
-    <script src="/javascript/jquery-3.3.1.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="/javascript/aparecer.js"></script>
-    <script src="/javascript/sweetalert2.all.js"></script>
-    <script src="/javascript/menu responsive.js"></script>
+<footer class="containe-fluid">
+    <section>
+        <div class="sombra">
+            <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
+
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google-plus-square"></i>
+        </div>
+
+        <div class="desarrolladoPor">
+            <p> Design by:
+                <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
+                <a href="https://www.behance.net/jaime_burb0681" target="_blank">
+                    Jaime Burbano</a>
+            </p>
+        </div>
+    </section>
+
+</footer>
+
+<script src="/javascript/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
 </body>
 
 </html>
+
+<!--<nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs- col-sm col-md- col-lg-9 navbar-header">
+                        <a class="navbar-brand" href="/">
+                            <img alt="El Saman" src="/imagenes/logo.png">
+                        </a>
+                    </div>
+
+                    <div class="col-xs- col-sm col-md- col-lg-3 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="principal visible-md visible-xs">
+                                <i class="fas fa-bars"></i>
+                            </li>
+                            <li class="principal activo">
+                                <a href="/nosotros">NOSOTROS</a>
+                            </li>
+
+                            <li class="dropdown principal">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu secundario">
+                                    <li>
+                                        <a href="/servicios/ventaganado">Venta de Ganado</a>
+                                    </li>
+                                    <li>
+                                        <a href="/servicios/asesoriatecnica">Asesoría Técnica</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="dropdown principal">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GÉNETICA
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu secundario">
+                                    <li>
+                                        <a href="/genetica/embriones">Embriones</a>
+                                    </li>
+                                    <li>
+                                        <a href="/genetica/terneras">Terneras</a>
+                                    </li>
+                                    <li>
+                                        <a href="/genetica/novillas">Novillas</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="principal">
+                                <a href="/contacto">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav> -->

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  background-color: #FCFCFC;
+  height: calc(100% - 90px) !important;
+}
+
+html body #contenido {
+  margin-top: 180px;
+  min-height: calc(100% - 90px) !important;
+}
+
+/*----------------------------    Barra Navegación      --------------------------*/
+.container header nav {
+  height: 90px;
+  background: #FCFCFC;
+}
+
+.container header nav div div:nth-child(2) ul .principal {
+  padding: 20px 5px;
+  border-bottom: solid 5px transparent;
+}
+
+.container header nav div div:nth-child(2) ul .principal a {
+  color: #727272;
+  font-weight: 900;
+  font-family: "Nunito", "sans-serif";
+}
+
+.container header nav div div:nth-child(2) ul .principal .secundario {
+  border: none;
+  border-top: solid 5px #F7931E;
+  padding: 0;
+  margin: 0;
+}
+
+.container header nav div div:nth-child(2) ul .principal .secundario li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #727272;
+}
+
+.container header nav div div:nth-child(2) ul .principal .secundario li a:hover {
+  background: transparent;
+}
+
+.container header nav div div:nth-child(2) ul .principal:hover {
+  border-bottom: solid 5px #F7931E;
+}
+
+.container header nav div div:nth-child(2) ul .open {
+  background: #F7931E !important;
+}
+
+.container header nav div div:nth-child(2) ul .open a {
+  color: #FCFCFC !important;
+  background: transparent !important;
+}
+
+.container header nav div div:nth-child(2) ul .open .secundario li a {
+  color: #727272 !important;
+}
+
+.container header nav div div:nth-child(2) ul .open .secundario li:hover {
+  background: #f0f0f0;
+}
+
+/*----------------------------    Nosotros      --------------------------*/
+#nosotros article h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: #F7931E;
+  margin-bottom: 80px;
+}
+
+#nosotros article div p {
+  font-family: "Nunito", "sans-serif";
+  color: #474747;
+  letter-spacing: 1;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#nosotros article .card {
+  background: #fff;
+  padding: 20px 0;
+  opacity: .8;
+  transition: all .4s;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+#nosotros article .card div:first-child {
+  text-align: center;
+}
+
+#nosotros article .card div:first-child img {
+  filter: grayscale(100%);
+}
+
+#nosotros article .card div:last-child h3 {
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #c4c4c4;
+}
+
+#nosotros article .card:hover {
+  opacity: 1;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  background: #f8f8f8;
+}
+
+#nosotros article .card:hover div:first-child {
+  text-align: center;
+}
+
+#nosotros article .card:hover div:first-child img {
+  filter: grayscale(0);
+}
+
+#nosotros article .card:hover div:last-child h3 {
+  color: #F7931E;
+}
+
+/*----------------------------    Footer      --------------------------*/
+footer {
+  background: #F7931E;
+  color: #FCFCFC;
+  letter-spacing: 3px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer section {
+  margin: 0;
+}
+
+footer .sombra {
+  background: #F7931E;
+  font-size: 30px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+footer .sombra h3 {
+  font-family: "Nunito", "sans-serif";
+  color: #FCFCFC;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+footer .sombra .fab {
+  opacity: .4;
+  font-size: 30px;
+  transition: all 0.2s;
+}
+
+footer .sombra .fab:hover {
+  opacity: 1;
+  font-size: 35px;
+}
+
+footer .desarrolladoPor {
+  background: #ac5e05;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 2px 0;
+  box-sizing: border-box;
+}
+
+footer .desarrolladoPor a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .desarrolladoPor a:hover {
+  color: #F7931E;
+}
+
+/*----------------------------    Generales      --------------------------*/
+.activo {
+  background: #F7931E !important;
+}
+
+.activo a {
+  color: #FCFCFC !important;
+}
+
+.activo:hover {
+  background: #F7931E !important;
+}
+
+.activo:hover a {
+  color: #FCFCFC !important;
+}
+/*# sourceMappingURL=style.css.map */

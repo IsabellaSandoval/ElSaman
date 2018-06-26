@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+$blancoA: #FCFCFC;
+$naranja: #F7931E;
+$azul: #68E0BE;
+$gris: #c4c4c4;
+$grisO: #727272;
+$negro: #474747;
+$tiempo: 0.2s;
+$lato: 'Lato',
+sans-serif;
+$nunito: 'Nunito',
+'sans-serif';
+$paytone: 'Paytone',
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    height: 100%;
+    body {
+        background-color: $blancoA;
+        height: calc(100% - 90px) !important;
+        #contenido {
+            margin-top: 180px;
+            min-height: calc(100% - 90px) !important;
+        }
+    }
+}
+
+/*----------------------------    Barra Navegación      --------------------------*/
+
+.container {
+    header {
+        nav {
+            height: 90px;
+            background: #FCFCFC;
+            div {
+                div:nth-child(2) {
+                    ul {
+                        .principal {
+                            padding: 20px 5px;
+                            border-bottom: solid 5px transparent;
+                            a {
+                                color: $grisO;
+                                font-weight: 900;
+                                font-family: $nunito;
+                            }
+                            .secundario {
+                                border: none;
+                                border-top: solid 5px $naranja;
+                                padding: 0;
+                                margin: 0;
+                                li {
+                                    a {
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        color: $grisO;
+                                    }
+                                    a:hover{
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                        }
+                        .principal:hover {
+                            border-bottom: solid 5px $naranja;
+                        }
+                        .open {
+                            background: $naranja !important;
+                            a {
+                                color: $blancoA !important;
+                                background: transparent !important;
+                            }
+                            .secundario{
+                                li{
+                                    a{
+                                        color: $grisO !important;
+                                    }
+                                }
+                                li:hover{
+                                    background: rgb(240, 240, 240);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------    Nosotros      --------------------------*/
+
+#nosotros {
+    article {
+        h1 {
+            font-family: $lato;
+            font-weight: 900;
+            font-size: 60px;
+            color: $naranja;
+            margin-bottom: 80px;
+        }
+        div {
+            p {
+                font-family: $nunito;
+                color: $negro;
+                letter-spacing: 1;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        .card {
+            background: #fff;
+            padding: 20px 0;
+            opacity: .8;
+            transition: all .4s;
+            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 50px;
+            div:first-child {
+                text-align: center;
+                img {
+                    filter: grayscale(100%);
+                }
+            }
+            div:last-child {
+                h3 {
+                    font-weight: 900;
+                    font-family: $lato;
+                    font-size: 17px;
+                    color: $gris;
+                }
+            }
+        }
+        .card:hover {
+            opacity: 1;
+            box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+            background: #f8f8f8;
+            div:first-child {
+                text-align: center;
+                img {
+                    filter: grayscale(0);
+                }
+            }
+            div:last-child {
+                h3 {
+                    color: $naranja;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------    Footer      --------------------------*/
+
+footer {
+    background: $naranja;
+    color: $blancoA;
+    letter-spacing: 3px;
+    text-align: center;
+    box-sizing: border-box;
+    section {
+        margin: 0;
+    }
+    .sombra {
+        background: $naranja;
+        font-size: 30px;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        h3 {
+            font-family: $nunito;
+            color: $blancoA;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .fab {
+            opacity: .4;
+            font-size: 30px;
+            transition: all $tiempo;
+        }
+        .fab:hover {
+            opacity: 1;
+            font-size: 35px;
+        }
+    }
+    .desarrolladoPor {
+        background: rgb(172, 94, 5);
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 2px 0;
+        box-sizing: border-box;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $naranja;
+        }
+    }
+}
+
+/*----------------------------    Generales      --------------------------*/
+
+.activo {
+    background: $naranja !important;
+    a {
+        color: $blancoA !important;
+    }
+}
+
+.activo:hover {
+    background: $naranja !important;
+    a {
+        color: $blancoA !important;
+    }
+}
