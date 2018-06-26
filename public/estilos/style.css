@@ -28,6 +28,10 @@ html body #contenido {
   background: #FCFCFC;
 }
 
+.container header nav div div:nth-child(1) button {
+  margin: 25px;
+}
+
 .container header nav div div:nth-child(1) a {
   margin-left: 20px;
 }
@@ -83,6 +87,18 @@ html body #contenido {
 
 .container header nav div div:nth-child(2) .collapse .in {
   height: 900px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  background: #FCFCFC;
+  padding: 0;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  background: #FCFCFC;
+  padding: 0;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*----------------------------    Nosotros      --------------------------*/
@@ -233,6 +249,7 @@ footer .desarrolladoPor {
   letter-spacing: 0;
   padding: 2px 0;
   box-sizing: border-box;
+  padding-top: 10px;
 }
 
 footer .desarrolladoPor a {

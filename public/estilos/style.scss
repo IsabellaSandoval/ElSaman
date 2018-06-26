@@ -39,13 +39,18 @@ html {
         nav {
             height: 90px;
             background: #FCFCFC;
+            
             div {
                 div:nth-child(1) {
+                    button{
+                        margin: 25px;
+                    }
                     a {
                         margin-left: 20px;
                     }
                 }
                 div:nth-child(2) {
+
                     ul {
                         .principal {
                             padding: 20px 5px;
@@ -104,6 +109,24 @@ html {
         }
     }
 }
+
+
+//SM Screen
+@media screen and (min-width:768px) and (max-width:991px) {
+    background: #FCFCFC;
+    padding: 0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+
+} 
+//XS Screen
+@media screen and (max-width:767px) {
+    background: #FCFCFC;
+    padding: 0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+
+
+}
+
 
 /*----------------------------    Nosotros      --------------------------*/
 
@@ -168,7 +191,8 @@ html {
                     color: $naranja;
                 }
             }
-        } //XS Screen
+        }
+         //XS Screen
         @media screen and (min-width:1200px) {
             #nosotros {
                 article {
@@ -261,6 +285,7 @@ footer {
         letter-spacing: 0;
         padding: 2px 0;
         box-sizing: border-box;
+        padding-top: 10px;
         a {
             color: #fff;
             text-decoration: none;
