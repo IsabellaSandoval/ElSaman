@@ -18,6 +18,10 @@ sans-serif;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
+    ::selection {
+        background: rgb(255, 193, 123);
+        color: #000;
+    }
 }
 
 html {
@@ -77,11 +81,11 @@ html {
                         }
                         .principal:hover {
                             border-bottom: solid 5px $naranja;
+                            background-color: #f0f0f0;
                         }
                         .open {
-                            background: $naranja !important;
+                            background: #dddcdc !important;
                             a {
-                                color: $blancoA !important;
                                 background: transparent !important;
                             }
                             .secundario {
@@ -185,7 +189,7 @@ footer {
 /*----------------------------    Generales      --------------------------*/
 
 .active {
-    background: rgb(172, 94, 5) !important;
+    background-color: $naranja !important;
     a {
         background-color: transparent !important;
         color: $blancoA !important;
@@ -208,9 +212,8 @@ footer {
         }
         div {
             p {
-                font-family: $nunito;
+                font-family: $lato;
                 color: $negro;
-                letter-spacing: 1;
                 font-size: 15px;
                 margin-bottom: 15px;
             }
@@ -223,7 +226,6 @@ footer {
             box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
             margin-bottom: 50px;
             height: 400px;
-            width: 325px;
             div:first-child {
                 text-align: center;
                 margin-top: 20px;
@@ -260,14 +262,141 @@ footer {
                 }
             }
         } //XS Screen
-        @media screen and (min-width:1200px) {
+        @media (min-width:1200px) {
             #nosotros {
                 article {
                     h1 {
                         font-size: 45px;
                     }
                 }
-                article:not(:first-of-type) {
+                    .card {
+                        height: 400px;
+                    
+                }
+            }
+        } //XS Screen
+        @media (min-width:992px) and (max-width:1199px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+                    .card {
+                        height: 450px;
+                        width: 265px;
+                    }
+                
+            }
+        } //XS Screen
+        @media (min-width:768px) and (max-width:991px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+                    .card {
+                        height: 280px;
+                        width: 800px;
+                    }
+                
+            }
+        } //XS Screen
+        @media (max-width:767px) {
+            #nosotros {
+                article {
+                    h1 {
+                        font-size: 20px;
+                    }
+                    
+                        .card {
+                            height: 300px;
+                            width: 630px;
+                            border: solid 1px $grisO;
+                        }
+                    
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------    Venta de Ganado      --------------------------*/
+
+#ventaGanado {
+    article {
+        div {
+            margin-bottom: 80px;
+            h1 {
+                font-family: $lato;
+                font-weight: 900;
+                font-size: 45px;
+                color: $naranja;
+            }
+            p {
+                font-family: $nunito;
+                color: $negro;
+                letter-spacing: 1px;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        .card {
+            background: #fff;
+            padding: 20px 0;
+            opacity: .8;
+            transition: all .4s;
+            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 50px;
+            height: 400px;
+            a {
+                text-decoration: none;
+                div:first-child {
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    img {
+                        filter: grayscale(100%);
+                    }
+                }
+                div:last-child {
+                    h3 {
+                        font-weight: 900;
+                        font-family: $lato;
+                        font-size: 17px;
+                        color: $gris;
+                    }
+                    p {
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+        .card:hover {
+            opacity: 1;
+            box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+            background: #f8f8f8;
+            a {
+                div:first-child {
+                    text-align: center;
+                    img {
+                        filter: grayscale(0);
+                    }
+                }
+                div:last-child {
+                    h3 {
+                        color: $naranja;
+                    }
+                }
+            }
+        } //XS Screen
+        @media screen and (min-width:1200px) {
+            #ventaGanado {
+                article {
+                    h1 {
+                        font-size: 45px;
+                    }
                     .card {
                         height: 400px;
                     }
@@ -275,168 +404,41 @@ footer {
             }
         } //XS Screen
         @media screen and (min-width:992px) and (max-width:1199px) {
-            #nosotros {
+            #ventaGanado {
                 article {
                     h1 {
                         font-size: 35px;
                     }
-                }
-                article:not(:first-of-type) {
                     .card {
                         height: 450px;
-                        width: 265px;
                     }
                 }
             }
         } //XS Screen
         @media screen and (min-width:768px) and (max-width:991px) {
-            #nosotros {
+            #ventaGanado {
                 article {
                     h1 {
                         font-size: 30px;
                     }
-                }
-                article:not(:first-of-type) {
                     .card {
                         height: 280px;
-                        width: 800px;
                     }
                 }
             }
         } //XS Screen
         @media screen and (max-width:767px) {
-            #nosotros {
+            #ventaGanado {
                 article {
                     h1 {
                         font-size: 20px;
                     }
-                    article:not(:first-of-type) {
-                        .card {
-                            height: 300px;
-                            width: 630px;
-                            border: solid 1px $grisO;
-                        }
-                    }
-                }
-            }
-        }
-    }}
-    /*----------------------------    Venta de Ganado      --------------------------*/
-    #ventaGanado {
-        article {
-            div {
-                margin-bottom: 80px;
-                h1 {
-                    font-family: $lato;
-                    font-weight: 900;
-                    font-size: 45px;
-                    color: $naranja;
-                }
-                p {
-                    font-family: $nunito;
-                    color: $negro;
-                    letter-spacing: 1;
-                    font-size: 15px;
-                    margin-bottom: 15px;
-                }
-            }
-            .card {
-                background: #fff;
-                padding: 20px 0;
-                opacity: .8;
-                transition: all .4s;
-                box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
-                margin-bottom: 50px;
-                height: 400px;
-                a {
-                    text-decoration: none;
-                    div:first-child {
-                        text-align: center;
-                        margin-top: 20px;
-                        margin-bottom: 50px;
-                        img {
-                            filter: grayscale(100%);
-                        }
-                    }
-                    div:last-child {
-                        h3 {
-                            font-weight: 900;
-                            font-family: $lato;
-                            font-size: 17px;
-                            color: $gris;
-                        }
-                        p {
-                            margin: 0 20px;
-                        }
-                    }
-                }
-            }
-            .card:hover {
-                opacity: 1;
-                box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
-                background: #f8f8f8;
-                a {
-                    div:first-child {
-                        text-align: center;
-                        img {
-                            filter: grayscale(0);
-                        }
-                    }
-                    div:last-child {
-                        h3 {
-                            color: $naranja;
-                        }
-                    }
-                }
-            } //XS Screen
-            @media screen and (min-width:1200px) {
-                #ventaGanado {
-                    article {
-                        h1 {
-                            font-size: 45px;
-                        }
-                        .card {
-                            height: 400px;
-                        }
-                    }
-                }
-            } //XS Screen
-            @media screen and (min-width:992px) and (max-width:1199px) {
-                #ventaGanado {
-                    article {
-                        h1 {
-                            font-size: 35px;
-                        }
-                        .card {
-                            height: 450px;
-                        }
-                    }
-                }
-            } //XS Screen
-            @media screen and (min-width:768px) and (max-width:991px) {
-                #ventaGanado {
-                    article {
-                        h1 {
-                            font-size: 30px;
-                        }
-                        .card {
-                            height: 280px;
-                        }
-                    }
-                }
-            } //XS Screen
-            @media screen and (max-width:767px) {
-                #ventaGanado {
-                    article {
-                        h1 {
-                            font-size: 20px;
-                        }
-                        .card {
-                            height: 300px;
-                            border: solid 1px $grisO;
-                        }
+                    .card {
+                        height: 300px;
+                        border: solid 1px $grisO;
                     }
                 }
             }
         }
     }
+}

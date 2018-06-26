@@ -8,6 +8,11 @@
   font-family: 'Nunito', sans-serif;
 }
 
+* ::selection {
+  background: #ffc17b;
+  color: #000;
+}
+
 html {
   height: 100%;
 }
@@ -66,14 +71,14 @@ html body #contenido {
 
 .container header nav div div:nth-child(2) ul .principal:hover {
   border-bottom: solid 5px #F7931E;
+  background-color: #f0f0f0;
 }
 
 .container header nav div div:nth-child(2) ul .open {
-  background: #F7931E !important;
+  background: #dddcdc !important;
 }
 
 .container header nav div div:nth-child(2) ul .open a {
-  color: #FCFCFC !important;
   background: transparent !important;
 }
 
@@ -166,7 +171,7 @@ footer .desarrolladoPor a:hover {
 
 /*----------------------------    Generales      --------------------------*/
 .active {
-  background: #ac5e05 !important;
+  background-color: #F7931E !important;
 }
 
 .active a {
@@ -188,9 +193,8 @@ footer .desarrolladoPor a:hover {
 }
 
 #nosotros article div p {
-  font-family: "Nunito", "sans-serif";
+  font-family: "Lato", sans-serif;
   color: #474747;
-  letter-spacing: 1;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -203,7 +207,6 @@ footer .desarrolladoPor a:hover {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
   height: 400px;
-  width: 325px;
 }
 
 #nosotros article .card div:first-child {
@@ -245,40 +248,40 @@ footer .desarrolladoPor a:hover {
   color: #F7931E;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   #nosotros article #nosotros article h1 {
     font-size: 45px;
   }
-  #nosotros article #nosotros article:not(:first-of-type) .card {
+  #nosotros article #nosotros .card {
     height: 400px;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   #nosotros article #nosotros article h1 {
     font-size: 35px;
   }
-  #nosotros article #nosotros article:not(:first-of-type) .card {
+  #nosotros article #nosotros .card {
     height: 450px;
     width: 265px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #nosotros article #nosotros article h1 {
     font-size: 30px;
   }
-  #nosotros article #nosotros article:not(:first-of-type) .card {
+  #nosotros article #nosotros .card {
     height: 280px;
     width: 800px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   #nosotros article #nosotros article h1 {
     font-size: 20px;
   }
-  #nosotros article #nosotros article article:not(:first-of-type) .card {
+  #nosotros article #nosotros article .card {
     height: 300px;
     width: 630px;
     border: solid 1px #727272;
@@ -300,7 +303,7 @@ footer .desarrolladoPor a:hover {
 #ventaGanado article div p {
   font-family: "Nunito", "sans-serif";
   color: #474747;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   font-size: 15px;
   margin-bottom: 15px;
 }
