@@ -80,7 +80,7 @@ app.get('/genetica/embriones', (req, res) => {
 
         embrionesCollection.toArray((err, result) => {
 
-        res.render('cons', {
+        res.render('embriones', {
             Embriones: result
         });
     })
@@ -171,7 +171,7 @@ app.get('/genetica/novillas', (req, res) => {
 
         novillasCollection.toArray((err, result) => {
 
-        res.render('cons', {
+        res.render('novillas', {
             Novillas: result
         });
     })
@@ -197,6 +197,10 @@ app.get('/genetica/terneras/:id', (req, res) => {
 
 app.get('/nosotros',(req,res)=>{
     res.render('nosotros');
+});
+
+app.get('/servicios/ventadeganado',(req,res)=>{
+    res.render('ventaGanado');
 });
 
 app.get('/servicios/asesoriatecnica',(req,res)=>{

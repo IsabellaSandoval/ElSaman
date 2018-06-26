@@ -298,16 +298,15 @@ footer {
 
 /*----------------------------    Generales      --------------------------*/
 
-.activo {
+.active {
     background: $naranja !important;
-    a {
+    a{
+        background-color: transparent !important;
         color: $blancoA !important;
     }
+    .secundario{
+        border: none !important;
+    }
+    
 }
 
-.activo:hover {
-    background: $naranja !important;
-    a {
-        color: $blancoA !important;
-    }
-}

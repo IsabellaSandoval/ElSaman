@@ -262,19 +262,16 @@ footer .desarrolladoPor a:hover {
 }
 
 /*----------------------------    Generales      --------------------------*/
-.activo {
+.active {
   background: #F7931E !important;
 }
 
-.activo a {
+.active a {
+  background-color: transparent !important;
   color: #FCFCFC !important;
 }
 
-.activo:hover {
-  background: #F7931E !important;
-}
-
-.activo:hover a {
-  color: #FCFCFC !important;
+.active .secundario {
+  border: none !important;
 }
 /*# sourceMappingURL=style.css.map */
