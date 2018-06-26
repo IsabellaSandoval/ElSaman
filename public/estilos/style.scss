@@ -112,7 +112,7 @@ html {
 }
 
 //XS y SM Screen
-@media screen and (max-width:992px) {
+@media screen and (max-width:768px) {
     .container {
         header {
             nav {
@@ -199,6 +199,135 @@ footer {
     }
 }
 
+/*----------------------------    Index      --------------------------*/
+
+#index {
+    padding: 0;
+    margin: 0;
+    .banner {
+        padding-top: 30px;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        div {
+            margin-top: 145px;
+            width: 95%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .informacionvacas {
+        padding: 0;
+        margin: 0;
+        section {
+            .info {
+                width: 70%;
+                margin-top: 20%;
+                margin-bottom:10%;
+                margin-left: 15%;
+                margin-right: 0;
+                p{
+                    font-family: $lato;
+                }
+            }
+            .imagen {
+                margin: 0 !important;
+               text-align: right;
+               padding: 0;
+            }
+        }
+        section:nth-child(2){
+            .info{
+                margin-top: 35%;
+                margin-left: 15%;
+            }
+            .imagen {
+                margin: 0 !important;
+
+               text-align: left;
+               padding: 0;
+            }
+        }
+    }
+    h1 {
+        font-family: $lato;
+        font-weight: 900;
+        font-size: 45px;
+        color: $naranja;
+        margin-bottom: 50px;
+    }
+    h2 {
+        letter-spacing: 3px;
+        color: $grisO;
+        margin-bottom: 40px;
+
+    }
+    h3 {
+        font-family: $nunito;
+        color: $blancoA;
+        font-size: 17px;
+    }
+}
+
+//md Screen
+@media (min-width:992px) and (max-width:1199px) {
+    #index {
+        .informacionvacas {
+            padding: 0;
+            margin: 0;
+            section {
+                .info {
+                    width: 90%;
+                    margin-top: 20%;
+                    margin-bottom:10%;
+                    margin-right: 0;
+                }
+                .imagen{
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+            section:nth-child(2){
+                .info{
+                    margin-top: 35%;
+                    margin-left: -10%;
+
+                }
+            }
+        }
+    }
+} //XS Screen
+@media  (max-width:991px) {
+html{
+
+     min-height: calc(100% - 10px) !important;
+    }
+    #index {
+        margin: 20px 0;
+        .informacionvacas {
+            padding: 0;
+            margin: 0;
+            section {
+                .info {
+                   width: 100%;
+                   margin:0;
+                }
+                
+            }
+            
+            section:nth-child(2){
+                .info {
+                    margin:0;
+                 }
+            }
+        }
+    }
+} 
 /*----------------------------    Nosotros      --------------------------*/
 
 #nosotros {
@@ -269,9 +398,8 @@ footer {
                         font-size: 45px;
                     }
                 }
-                    .card {
-                        height: 400px;
-                    
+                .card {
+                    height: 400px;
                 }
             }
         } //XS Screen
@@ -282,11 +410,10 @@ footer {
                         font-size: 35px;
                     }
                 }
-                    .card {
-                        height: 450px;
-                        width: 265px;
-                    }
-                
+                .card {
+                    height: 450px;
+                    width: 265px;
+                }
             }
         } //XS Screen
         @media (min-width:768px) and (max-width:991px) {
@@ -296,11 +423,10 @@ footer {
                         font-size: 30px;
                     }
                 }
-                    .card {
-                        height: 280px;
-                        width: 800px;
-                    }
-                
+                .card {
+                    height: 280px;
+                    width: 800px;
+                }
             }
         } //XS Screen
         @media (max-width:767px) {
@@ -309,13 +435,11 @@ footer {
                     h1 {
                         font-size: 20px;
                     }
-                    
-                        .card {
-                            height: 300px;
-                            width: 630px;
-                            border: solid 1px $grisO;
-                        }
-                    
+                    .card {
+                        height: 300px;
+                        width: 630px;
+                        border: solid 1px $grisO;
+                    }
                 }
             }
         }
@@ -337,7 +461,6 @@ footer {
             p {
                 font-family: $nunito;
                 color: $negro;
-                letter-spacing: 1px;
                 font-size: 15px;
                 margin-bottom: 15px;
             }

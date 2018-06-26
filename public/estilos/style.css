@@ -94,7 +94,7 @@ html body #contenido {
   height: 900px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .container header nav {
     height: 90px;
     background: #FCFCFC;
@@ -181,6 +181,124 @@ footer .desarrolladoPor a:hover {
 
 .active .secundario {
   border: none !important;
+}
+
+/*----------------------------    Index      --------------------------*/
+#index {
+  padding: 0;
+  margin: 0;
+}
+
+#index .banner {
+  padding-top: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#index .banner div {
+  margin-top: 145px;
+  width: 95%;
+}
+
+#index .banner div img {
+  width: 100%;
+}
+
+#index .informacionvacas {
+  padding: 0;
+  margin: 0;
+}
+
+#index .informacionvacas section .info {
+  width: 70%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 0;
+}
+
+#index .informacionvacas section .info p {
+  font-family: "Lato", sans-serif;
+}
+
+#index .informacionvacas section .imagen {
+  margin: 0 !important;
+  text-align: right;
+  padding: 0;
+}
+
+#index .informacionvacas section:nth-child(2) .info {
+  margin-top: 35%;
+  margin-left: 15%;
+}
+
+#index .informacionvacas section:nth-child(2) .imagen {
+  margin: 0 !important;
+  text-align: left;
+  padding: 0;
+}
+
+#index h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  color: #F7931E;
+  margin-bottom: 50px;
+}
+
+#index h2 {
+  letter-spacing: 3px;
+  color: #727272;
+  margin-bottom: 40px;
+}
+
+#index h3 {
+  font-family: "Nunito", "sans-serif";
+  color: #FCFCFC;
+  font-size: 17px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #index .informacionvacas {
+    padding: 0;
+    margin: 0;
+  }
+  #index .informacionvacas section .info {
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-right: 0;
+  }
+  #index .informacionvacas section .imagen img {
+    width: 80%;
+  }
+  #index .informacionvacas section:nth-child(2) .info {
+    margin-top: 35%;
+    margin-left: -10%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    min-height: calc(100% - 10px) !important;
+  }
+  #index {
+    margin: 20px 0;
+  }
+  #index .informacionvacas {
+    padding: 0;
+    margin: 0;
+  }
+  #index .informacionvacas section .info {
+    width: 100%;
+    margin: 0;
+  }
+  #index .informacionvacas section:nth-child(2) .info {
+    margin: 0;
+  }
 }
 
 /*----------------------------    Nosotros      --------------------------*/
@@ -303,7 +421,6 @@ footer .desarrolladoPor a:hover {
 #ventaGanado article div p {
   font-family: "Nunito", "sans-serif";
   color: #474747;
-  letter-spacing: 1px;
   font-size: 15px;
   margin-bottom: 15px;
 }
