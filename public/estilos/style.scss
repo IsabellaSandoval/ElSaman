@@ -219,7 +219,6 @@ footer {
             }
         }
     }
-    
     .informacionvacas {
         padding: 0;
         margin: 0;
@@ -227,29 +226,28 @@ footer {
             .info {
                 width: 70%;
                 margin-top: 20%;
-                margin-bottom:10%;
+                margin-bottom: 10%;
                 margin-left: 15%;
                 margin-right: 0;
-                p{
+                p {
                     font-family: $lato;
                 }
             }
             .imagen {
                 margin: 0 !important;
-               text-align: right;
-               padding: 0;
+                text-align: right;
+                padding: 0;
             }
         }
-        section:nth-child(2){
-            .info{
+        section:nth-child(2) {
+            .info {
                 margin-top: 35%;
                 margin-left: 15%;
             }
             .imagen {
                 margin: 0 !important;
-
-               text-align: left;
-               padding: 0;
+                text-align: left;
+                padding: 0;
             }
         }
     }
@@ -264,7 +262,6 @@ footer {
         letter-spacing: 3px;
         color: $grisO;
         margin-bottom: 40px;
-
     }
     h3 {
         font-family: $nunito;
@@ -283,29 +280,27 @@ footer {
                 .info {
                     width: 90%;
                     margin-top: 20%;
-                    margin-bottom:10%;
+                    margin-bottom: 10%;
                     margin-right: 0;
                 }
-                .imagen{
-                    img{
+                .imagen {
+                    img {
                         width: 80%;
                     }
                 }
             }
-            section:nth-child(2){
-                .info{
+            section:nth-child(2) {
+                .info {
                     margin-top: 35%;
                     margin-left: -10%;
-
                 }
             }
         }
     }
 } //XS Screen
-@media  (max-width:991px) {
-html{
-
-     min-height: calc(100% - 10px) !important;
+@media (max-width:991px) {
+    html {
+        min-height: calc(100% - 10px) !important;
     }
     #index {
         margin: 20px 0;
@@ -314,20 +309,19 @@ html{
             margin: 0;
             section {
                 .info {
-                   width: 100%;
-                   margin:0;
+                    width: 100%;
+                    margin: 0;
                 }
-                
             }
-            
-            section:nth-child(2){
+            section:nth-child(2) {
                 .info {
-                    margin:0;
-                 }
+                    margin: 0;
+                }
             }
         }
     }
-} 
+}
+
 /*----------------------------    Nosotros      --------------------------*/
 
 #nosotros {
