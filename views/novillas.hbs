@@ -21,6 +21,7 @@
         crossorigin="anonymous">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/estilos/multirange.css">
     <link rel="stylesheet" href="/estilos/style.css">
 </head>
 
@@ -57,7 +58,7 @@
                                     <li>
                                         <a href="/servicios/ventadeganado">Venta de Ganado</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a href="/servicios/asesoriatecnica">Asesoría Técnica</a>
                                     </li>
                                 </ul>
@@ -87,37 +88,199 @@
             </nav>
         </header>
     </div>
-    <section id="contenido" class="container">
+
+
+
+    <section class="container-fluid" id="contenido">
+        <section id="terneras" class="row">
+            <section class="seccion-filtros col-lg-2">
+
+                <!-- Mostrar/Ocultar filtros -->
+
+                <button type="button" id="mostrarfiltro" value="mostrar">Ver Filtros
+                    <i class="fas fa-angle-up" id="fle_filtros"></i>
+                </button>
+
+                <article id="filtros">
+                    <!-- Filtro por tipo -->
+
+                    <button type="button" id="tipo" value="mostrar">Tipo
+                        <i class="fas fa-angle-up" id="fle_tipo"></i>
+                    </button>
+                    <div id="filtro_tipo">
+
+                        <label class="container">Embrión
+                            <input type="radio" name="tipo" value="embrion">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ternera
+                            <input type="radio" name="tipo" value="ternera" >
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Novilla
+                            <input type="radio" name="tipo" value="novilla" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+
+                    </div>
+                    <!-- Filtro por edad -->
+                    <button type="button" id="edad" value="mostrar">Edad
+                        <i class="fas fa-angle-up" id="fle_edad"></i>
+                    </button>
+
+                    <article id="filtro_edad" class="rango">
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="7" value="0" class="slider" id="desde_edad">
+                            <input type="range" min="7" max="15" value="15" class="slider" id="hasta_edad">
+                        </div>
+                        <div class="valores">
+                            <div class="valor-text">
+                                <p class="text-left">Desde:
+                                    <span id="desdeValor_edad"></span>
+                                </p>
+                            </div>
+
+                            <div class="valor-text">
+                                <p class="text-right">Hasta:
+                                    <span id="hastaValor_edad"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="botones">
+                            <button class="filtroRango_edad btn-filtro">Buscar</button>
+                            <button class="borrarFiltros_edad btn-filtro">Borrar FIltros</button>
+                        </div>
+
+                    </article>
+                    <!-- Filtro por precio -->
+
+                    <button type="button" id="precio" value="mostrar">Precio
+                        <i class="fas fa-angle-up" id="fle_edad"></i>
+                    </button>
+
+                    <article class="rango" id="fle_precio">
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="500000" value="0" class="slider" id="desde">
+                            <input type="range" min="500000" max="1000000" value="1000000" class="slider" id="hasta">
+                        </div>
+
+                        <div class="valores">
+                            <div class="valor-text">
+                                <p class="text-left">Desde:
+                                    <span id="desdeValor"></span>
+                                </p>
+                            </div>
+                            <div class="valor-text">
+                                <p class="text-right">Hasta:
+                                    <span id="hastaValor"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="botones">
+                            <button class="filtroRango btn-filtro">Buscar</button>
+                            <button class="borrarFiltros btn-filtro">Borrar FIltros</button>
+                        </div>
+
+                    </article>
+
+                </article>
+
+            </section>
+
+            <section class="seccion-productos col-lg-10">
+                <section class="row">
+                    <article class="col-lg-12 filtros-top">
+
+                        <div class="col-lg-4 text-left">
+                            <p><strong>GENÉTICA /</strong> Teneras</p>
+                        </div>
+
+
+                        <!-- Filtro por precio -->
+                        <div class="col-lg-4 text-center">
+                            <div>
+                                <p>Ordenar</p>
+                            </div>
+                            <div>
+                            <select>
+                                <option value="asc">Precio Ascendente</option>
+                                <option value="des">Precio Descendente</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <!-- Filtro por sexo -->
+                        <div class="col-lg-4 text-center">
+                            <div>
+                                <p>Ver</p>
+                            </div>
+                            <div>
+                                <a href="/genetica/terneras?sexo=Hembra">
+                                    <i class="fas fa-mars"></i>
+                                </a>
+                                <a href="/genetica/terneras?sexo=Macho">
+                                    <i class="fas fa-venus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article class="col-lg-12 productos">
+                        <section class="row">
+                            {{#each Terneras}}
+                            <article data-id="{{this._id}}" class="col-lg-4">
+                                <a href="/genetica/terneras/{{_id}}">
+
+                                    <div class="img-info">
+                                        <img src="{{imagen}}">
+                                    </div>
+                                    <h1>{{marca}} {{modelo}}</h1>
+                                    <div class="flex-container info">
+                                        <h1>{{nombre}} {{numero}}</h1>
+                                    </div>
+                                </a>
+
+                            </article>
+                            {{/each}}
+                        </section>
+                    </article>
+                </section>
+
+
+            </section>
+        </section>
     </section>
-</body>
 
+    <footer class="containe-fluid">
+        <section>
+            <div class="sombra">
+                <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
 
-<footer class="containe-fluid">
-    <section>
-        <div class="sombra">
-            <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+            </div>
 
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-google-plus-square"></i>
-        </div>
+            <div class="desarrolladoPor">
+                <p> Design by:
+                    <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
+                    <a href="https://www.behance.net/jaime_burb0681" target="_blank">
+                        Jaime Burbano</a>
+                </p>
+            </div>
+        </section>
 
-        <div class="desarrolladoPor">
-            <p> Design by:
-                <a href="https://www.behance.net/IsabellaSandoval" target="_blank">Isabella Sandoval </a> | Development by:
-                <a href="https://www.behance.net/jaime_burb0681" target="_blank">
-                    Jaime Burbano</a>
-            </p>
-        </div>
-    </section>
+    </footer>
 
-</footer>
-
-<script src="/javascript/jquery-3.3.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-<script src="/javascript/sweetalert2.all.js"></script>
-
+    <script src="/javascript/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="/javascript/filtros.js"></script>
 </body>
 
 </html>

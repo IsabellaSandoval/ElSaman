@@ -199,20 +199,23 @@ footer {
     }
 }
 
+.hidden {
+    display: none !important;
+}
+
 /*----------------------------    Index      --------------------------*/
 
 #index {
     padding: 0;
     margin: 0;
     .banner {
-        padding-top: 30px;
         margin: 0;
         margin-bottom: 20px;
         width: 100%;
         display: flex;
         justify-content: center;
         div {
-            margin-top: 145px;
+            margin-top: 120px;
             width: 95%;
             img {
                 width: 100%;
@@ -553,6 +556,118 @@ footer {
                     .card {
                         height: 300px;
                         border: solid 1px $grisO;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------    Terneras      --------------------------*/
+
+#terneras {
+    .seccion-filtros {
+        button {
+            background: none;
+            border: none;
+            font-family: $lato;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            .fas {
+                color: $negro;
+                font-size: 15px;
+            }
+        }
+        #filtros {
+            .rango {
+                display: block;
+                margin-left: 15px;
+                margin-top: 5px;
+                .slidecontainer {
+                    .slider {
+                        box-sizing: border-box;
+                        display: inline-block;
+                        margin: 0;
+                        padding: 0;
+                        width: 49%;
+                    }
+                }
+                .valores {
+                    .valor-text {
+                        display: inline-block;
+                        width: 48%;
+                    }
+                }
+                .botones {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    .btn-filtro {
+                        font-family: $lato;
+                        font-weight: bold;
+                        color: $blancoA;
+                        background-color: $naranja;
+                        padding: 5px 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .seccion-productos {
+        section {
+            .filtros-top {
+                div {
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    p {
+                        color: $grisO;
+                        font-family: $lato;
+                        font-weight: bold;
+                        margin: 0 10px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $grisO;
+                        opacity: .7;
+                        transition: all .4s;
+                        .fas {
+                            font-size: 20px;
+                            margin: 0 5px;
+                        }
+                    }
+                    a:hover {
+                        color: $naranja;
+                        opacity: 1;
+                    }
+                }
+            }
+            .productos {
+                section {
+                    article {
+                        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                        border: solid 1px $gris;
+                        filter: grayscale(1);
+                        transition: all .4s;
+                        a {
+                            text-decoration: none;
+                            .img-info {
+                                width: 95%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    article:hover{
+                        opacity: 1;
+                        filter: grayscale(0);
                     }
                 }
             }

@@ -58,7 +58,8 @@
     background: #F7931E;
     right: 100%;
     z-index: -1;
-    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
   }
   header nav .con-menu ul li {
     display: block;

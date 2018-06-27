@@ -490,7 +490,6 @@ footer {
     margin-top: 20px;
     justify-content: space-between;
     article {
-        background-color: #fff;
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
         float: left;
         width: 300px;
@@ -499,6 +498,7 @@ footer {
         margin-right: 2.5%;
         opacity: .85;
         a {
+            background-color: #fff;
             text-decoration: none;
             .img-info {
                 width: 300px;

@@ -8,6 +8,11 @@
   font-family: 'Nunito', sans-serif;
 }
 
+* ::-moz-selection {
+  background: #ffc17b;
+  color: #000;
+}
+
 * ::selection {
   background: #ffc17b;
   color: #000;
@@ -101,7 +106,8 @@ html body #contenido {
   }
   .container header nav div div:nth-child(2) {
     background: #FCFCFC;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
   }
   .container header nav div div:nth-child(2) ul {
     margin-top: 0;
@@ -118,7 +124,8 @@ footer {
   color: #FCFCFC;
   letter-spacing: 3px;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 footer section {
@@ -143,6 +150,7 @@ footer .sombra h3 {
 footer .sombra .fab {
   opacity: .4;
   font-size: 30px;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -156,7 +164,8 @@ footer .desarrolladoPor {
   font-size: 12px;
   letter-spacing: 0;
   padding: 2px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 10px;
 }
 
@@ -183,6 +192,10 @@ footer .desarrolladoPor a:hover {
   border: none !important;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /*----------------------------    Index      --------------------------*/
 #index {
   padding: 0;
@@ -190,16 +203,19 @@ footer .desarrolladoPor a:hover {
 }
 
 #index .banner {
-  padding-top: 30px;
   margin: 0;
   margin-bottom: 20px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #index .banner div {
-  margin-top: 145px;
+  margin-top: 120px;
   width: 95%;
 }
 
@@ -321,8 +337,10 @@ footer .desarrolladoPor a:hover {
   background: #fff;
   padding: 20px 0;
   opacity: .8;
+  -webkit-transition: all .4s;
   transition: all .4s;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
   height: 400px;
 }
@@ -334,7 +352,8 @@ footer .desarrolladoPor a:hover {
 }
 
 #nosotros article .card div:first-child img {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #nosotros article .card div:last-child h3 {
@@ -350,7 +369,8 @@ footer .desarrolladoPor a:hover {
 
 #nosotros article .card:hover {
   opacity: 1;
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
   background: #f8f8f8;
 }
 
@@ -359,7 +379,8 @@ footer .desarrolladoPor a:hover {
 }
 
 #nosotros article .card:hover div:first-child img {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 #nosotros article .card:hover div:last-child h3 {
@@ -429,8 +450,10 @@ footer .desarrolladoPor a:hover {
   background: #fff;
   padding: 20px 0;
   opacity: .8;
+  -webkit-transition: all .4s;
   transition: all .4s;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
   height: 400px;
 }
@@ -446,7 +469,8 @@ footer .desarrolladoPor a:hover {
 }
 
 #ventaGanado article .card a div:first-child img {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #ventaGanado article .card a div:last-child h3 {
@@ -462,7 +486,8 @@ footer .desarrolladoPor a:hover {
 
 #ventaGanado article .card:hover {
   opacity: 1;
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
   background: #f8f8f8;
 }
 
@@ -471,7 +496,8 @@ footer .desarrolladoPor a:hover {
 }
 
 #ventaGanado article .card:hover a div:first-child img {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 #ventaGanado article .card:hover a div:last-child h3 {
@@ -513,5 +539,119 @@ footer .desarrolladoPor a:hover {
     height: 300px;
     border: solid 1px #727272;
   }
+}
+
+/*----------------------------    Terneras      --------------------------*/
+#terneras .seccion-filtros button {
+  background: none;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+#terneras .seccion-filtros button .fas {
+  color: #474747;
+  font-size: 15px;
+}
+
+#terneras .seccion-filtros #filtros .rango {
+  display: block;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#terneras .seccion-filtros #filtros .rango .slidecontainer .slider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+}
+
+#terneras .seccion-filtros #filtros .rango .valores .valor-text {
+  display: inline-block;
+  width: 48%;
+}
+
+#terneras .seccion-filtros #filtros .rango .botones {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#terneras .seccion-filtros #filtros .rango .botones .btn-filtro {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #FCFCFC;
+  background-color: #F7931E;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+#terneras .seccion-productos section .filtros-top div {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#terneras .seccion-productos section .filtros-top div p {
+  color: #727272;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+#terneras .seccion-productos section .filtros-top div a {
+  text-decoration: none;
+  color: #727272;
+  opacity: .7;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#terneras .seccion-productos section .filtros-top div a .fas {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+#terneras .seccion-productos section .filtros-top div a:hover {
+  color: #F7931E;
+  opacity: 1;
+}
+
+#terneras .seccion-productos section .productos section article {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: solid 1px #c4c4c4;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#terneras .seccion-productos section .productos section article a {
+  text-decoration: none;
+}
+
+#terneras .seccion-productos section .productos section article a .img-info {
+  width: 95%;
+}
+
+#terneras .seccion-productos section .productos section article a .img-info img {
+  width: 100%;
+}
+
+#terneras .seccion-productos section .productos section article:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 /*# sourceMappingURL=style.css.map */

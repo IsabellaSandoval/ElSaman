@@ -3473,17 +3473,3 @@ if (typeof window !== 'undefined' && window.Sweetalert2){  window.swal = window.
 "    -webkit-transform: rotate(360deg);\n" +
 "            transform: rotate(360deg); } }");
 
-
-
-
-
-
-
-
-
-swal({
-	type:'warning',
-	title:'EL SITIO WEB ESTÁ EN CONSTRUCCIÓN',
-	text:'Lamentamos las molestias. Para mayor informacion contactenos.',
-	timer:6000,
-  });
