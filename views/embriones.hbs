@@ -114,11 +114,11 @@
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">Ternera
-                            <input type="radio" name="tipo" value="ternera">
+                            <input type="radio" name="tipo" value="ternera" >
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">Novilla
-                            <input type="radio" name="tipo" value="novilla">
+                            <input type="radio" name="tipo" value="novilla" >
                             <span class="checkmark"></span>
                         </label>
 
@@ -233,13 +233,12 @@
                         <section class="row">
                             {{#each Terneras}}
                             <article data-id="{{this._id}}" class="col-lg-4">
-                                <a href="/genetica/terneras/{{_id}}">
+                                <a href="/genetica/embriones/{{_id}}">
 
                                     <div class="img-info">
                                         <img src="{{imagen}}">
                                     </div>
-                                    <h1>{{marca}} {{modelo}}</h1>
-                                    <div class="flex-container info">
+                                    <div class="info">
                                         <h1>{{nombre}} {{numero}}</h1>
                                     </div>
                                 </a>
@@ -250,6 +249,49 @@
                     </article>
                 </section>
 
+ <article class="col-lg-9 text-center pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">6</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">7</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">8</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">9</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">10</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </article>
+            </section>
 
             </section>
         </section>
@@ -280,7 +322,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="/javascript/filtros.js"></script>
+    <script src="/javascript/filtros-embriones.js"></script>
 </body>
 
 </html>
