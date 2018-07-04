@@ -3,7 +3,6 @@
 var btn = document.querySelector("#mostrarfiltro");
 
 console.log(btn);
-console.log(filtros);
 
 btn.addEventListener("click", function () {
 
@@ -12,7 +11,7 @@ btn.addEventListener("click", function () {
         case "mostrar":
             console.log("Elimina");
             $("#filtros").addClass("hidden");
-          
+
             $("#fle_filtros").addClass("fa-angle-down");
             $("#fle_filtros").removeClass("fa-angle-up");
             btn.value = "ocultar";
@@ -26,7 +25,7 @@ btn.addEventListener("click", function () {
             $("#fle_filtros").removeClass("fa-angle-down");
             btn.value = "mostrar";
             break;
-    }   
+    }
 
 });
 
@@ -35,7 +34,6 @@ btn.addEventListener("click", function () {
 var btn_tipo = document.querySelector("#tipo");
 
 console.log(btn_tipo);
-console.log(filtro_tipo);
 
 btn_tipo.addEventListener("click", function () {
 
@@ -58,7 +56,7 @@ btn_tipo.addEventListener("click", function () {
             $("#fle_tipo").removeClass("fa-angle-down");
             btn_tipo.value = "mostrar";
             break;
-    }   
+    }
 });
 
 /* --------------------------        Mostrar/Ocultar Filtros x Edad     -------------------------- */
@@ -66,7 +64,6 @@ btn_tipo.addEventListener("click", function () {
 var btn_edad = document.querySelector("#edad");
 
 console.log(btn_edad);
-console.log(filtro_edad);
 
 btn_edad.addEventListener("click", function () {
 
@@ -89,23 +86,21 @@ btn_edad.addEventListener("click", function () {
             $("#fle_edad").removeClass("fa-angle-down");
             btn_edad.value = "mostrar";
             break;
-    }   
+    }
 });
 
 /* --------------------------        Mostrar/Ocultar Filtros x precio     -------------------------- */
 
 var btn_precio = document.querySelector("#precio");
-var filtro_precio = document.querySelector("#filtro_precio");
 
 console.log(btn_precio);
-console.log(filtro_precio);
 
 btn_precio.addEventListener("click", function () {
 
     switch (btn_precio.value) {
 
         case "mostrar":
-            console.log("Elimina");
+            console.log("Elimina precio");
             $("#filtro_precio").addClass("hidden");
 
             $("#fle_precio").addClass("fa-angle-down");
@@ -114,25 +109,26 @@ btn_precio.addEventListener("click", function () {
             break;
 
         case "ocultar":
-            console.log("se empieza a mostrar");
+            console.log("se empieza a mostrar precio");
             $("#filtro_precio").removeClass("hidden");
 
             $("#fle_precio").addClass("fa-angle-up");
             $("#fle_precio").removeClass("fa-angle-down");
             btn_precio.value = "mostrar";
             break;
-    }   
+    }
+    console.log("Cambio el precio");
+
 });
 
 
-
-/* --------------------------        Filtro por tipo     -------------------------- */
+/* --------------------------        Filtro por tipo Funcional    -------------------------- */
 
 $
 
 
 
-/* --------------------------        Filtro por edad     -------------------------- */
+/* --------------------------        Filtro por edad Funcional    -------------------------- */
 /* Valor del rango desde*/
 
 var sliderDesde_edad = document.getElementById("desde_edad");
@@ -169,7 +165,7 @@ borrar_edad.addEventListener("click", function (e) {
     location.href = "/genetica/novillas";
 });
 
-/* --------------------------        Filtro por precio     -------------------------- */
+/* --------------------------        Filtro por precio Funcional    -------------------------- */
 /* Valor del rango desde*/
 
 var sliderDesde = document.getElementById("desde");
