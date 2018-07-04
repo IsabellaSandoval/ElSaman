@@ -30,6 +30,7 @@ btn.addEventListener("click", function () {
 
 });
 
+
 /* --------------------------        Mostrar/Ocultar Filtros x Tipo     -------------------------- */
 
 var btn_tipo = document.querySelector("#tipo");
