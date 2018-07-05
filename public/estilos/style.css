@@ -732,28 +732,29 @@ footer .desarrolladoPor a:hover {
 }
 
 /*----------------------------    Contacto      --------------------------*/
-#contacto .contenido .contacto {
-  margin-bottom: 50px;
+#contacto {
+  margin: 50px 0;
+  margin-bottom: 90px;
 }
 
-#contacto .contenido .contacto h2 {
+#contacto .contacto h2 {
   text-align: center;
   color: #F7931E;
   margin-bottom: 50px;
   font-weight: bold;
 }
 
-#contacto .contenido .contacto form div {
+#contacto .contacto form div {
   margin: 10px 0;
 }
 
-#contacto .contenido .contacto form div p {
+#contacto .contacto form div p {
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
 
-#contacto .contenido .contacto form div input {
+#contacto .contacto form div input {
   width: 100%;
   border: none;
   height: 30px;
@@ -761,15 +762,15 @@ footer .desarrolladoPor a:hover {
   padding: 10px;
 }
 
-#contacto .contenido .contacto form div input:focus {
+#contacto .contacto form div input:focus {
   outline-color: #F7931E;
 }
 
-#contacto .contenido .contacto form .mensaje {
+#contacto .contacto form .mensaje {
   width: 100%;
 }
 
-#contacto .contenido .contacto form .mensaje textarea {
+#contacto .contacto form .mensaje textarea {
   width: 100%;
   height: 100px;
   background: #f3f3f3;
@@ -777,16 +778,16 @@ footer .desarrolladoPor a:hover {
   border: none;
 }
 
-#contacto .contenido .contacto form .mensaje textarea:focus {
+#contacto .contacto form .mensaje textarea:focus {
   outline-color: #F7931E;
 }
 
-#contacto .contenido .contacto form .boton {
+#contacto .contacto form .boton {
   display: block;
   text-align: center;
 }
 
-#contacto .contenido .contacto form .boton button {
+#contacto .contacto form .boton button {
   width: 70%;
   border: none;
   background: #F7931E;
@@ -798,11 +799,11 @@ footer .desarrolladoPor a:hover {
   outline: none;
 }
 
-#contacto .contenido .contacto form .boton button:hover {
+#contacto .contacto form .boton button:hover {
   background: #cc7417;
 }
 
-#contacto .contenido .maps {
+#contacto .maps {
   height: 600px;
 }
 /*# sourceMappingURL=style.css.map */

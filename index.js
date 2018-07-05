@@ -95,7 +95,7 @@ app.get('/genetica/embriones/:id', (req, res) => {
         })
         .toArray((err, result) => {
             // console.log(result[0]);
-            res.render('productos', {
+            res.render('embrio_ver', {
                 volver: "/genetica/embriones",
                 Embrion: result[0]
 
@@ -158,7 +158,7 @@ app.get('/genetica/terneras/:id', (req, res) => {
         })
         .toArray((err, result) => {
             // console.log(result[0]);
-            res.render('productos', {
+            res.render('ternera_ver', {
                 volver: "/genetica/terneras",
                 Ternera: result[0]
 
@@ -221,7 +221,7 @@ app.get('/genetica/novillas/:id', (req, res) => {
         })
         .toArray((err, result) => {
             // console.log(result[0]);
-            res.render('productos', {
+            res.render('novilla_ver', {
                 volver: "/genetica/novillas",
                 Novilla: result[0]
 

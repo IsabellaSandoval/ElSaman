@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>El Sáman</title>
+    <title>El Sáman | Novillas</title>
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
     <!-- Font Awesome -->
@@ -32,7 +32,6 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-                            <span class="sr-only">Menú</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -62,7 +61,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown principal">
+                            <li class="dropdown principal active">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"> GÉNETICA
                                     <span class="caret"></span>
                                 </a>
@@ -88,82 +87,45 @@
         </header>
     </div>
 
-
-
     <section class="container-fluid" id="contenido">
-        <section id="index">
+        <section id="productos" class="row">
 
-            <section class="banner container-fluid">
-                <div>
-                    <img src="imagenes/banner.png" alt="jersey puro">
-                </div>
-            </section>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-1 col-lg-11 col-lg-offset-1 devolverse ">
+                <a href="{{volver}}">
+                    <i class="fas fa-chevron-circle-left"></i> Volver Atrás</a>
+            </div>
 
-            <section class="aparecer">
-                <article>
+            <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+                <article class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 aparecer">
+                    <div class="imagen" style="background-image:url('{{Novilla.imagen}}');"></div>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-3 col-lg-3 aparecer">
                     <div>
-                        <h1 class="text-center">
-                            ¿POR QUÉ JERSEY?
-                        </h1>
+                        <h1>Novilla - {{Novilla.nombre}}{{Novilla.numero}}</h1>
+                        <p>{{Novilla.descripcion}} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, alias
+                            expedita. Odit animi libero veniam numquam architecto voluptas et aspernatur, reiciendis maxime
+                            dolor accusantium unde nam similique accusamus distinctio. Non?</p>
+
+                        <h4>Raza: </h4>
+                        <p>Jersey</p>
+                        <br />
+                        <h4>Categoría: </h4>
+                        <p>{{Novilla.categoria}}</p>
+                        <br />
+
+                        <h4>Fecha de Nacimiento: </h4>
+                        <p>{{Novilla.nacimiento}}</p>
+                        <br />
+
+                        <h4>Sexo: </h4>
+                        <p>{{Novilla.sexo}}</p>
+                        <br />
+
+                        <h4>Semen Disponible: </h4>
+                        <p>{{Novilla.semen}}</p>
                     </div>
                 </article>
-            </section>
-
-            <section class="informacionvacas container-fluid">
-
-                <section class="aparecer row">
-                    <article class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-5 col-lg-5">
-
-                        <div class="info">
-                            <h2 class="text-center">RUSTICIDAD</h2>
-                            <p class="text-justify">
-                                Su talla pequeña (1,25m de altura), peso promedio de hembras adultas entre 400kg a 500kg, hueso fino y excelentes patas,
-                                permite que se adapte muy fácilmente a una amplia gama de condiciones climáticas y topográficas.
-                                Su menor tamaño hace que sea mas tolerante al calor y a la humedad, resistiendo hasta 5 grados
-                                mas que otras razas antes que el exceso de calor afecte su producción.
-                            </p>
-
-                        </div>
-                    </article>
-
-                    <article class="col-md-7 col-lg-6 hidden-xs hidden-sm  imagen">
-                        <img src="/imagenes/novilla.png" alt="Novillo">
-                    </article>
-                </section>
-
-                <section class="aparecer row">
-                    <article class="col-md-7 col-lg-6 hidden-xs hidden-sm imagen">
-                        <img src="/imagenes/novi.png" alt="Novillo">
-                    </article>
-                    <article class="col-xs-10 col-xs-offset-1  col-sm-10 col-md-5 col-lg-5">
-                        <div class="info">
-                            <h2 class="text-center">CRUZAMIENTOS</h2>
-                            <p class="text-justify">La raza se caracteriza por tener una eficiente conversión de alimento en leche de óptima calidad.
-                                La leche de Jersey tiene en promedio 18% más proteina, 29% más grasa y 20% más calcio que
-                                otras razas especializadas, lo que traduce en un mayor precio por litro vendido (30% más
-                                sobre el valor normal).
-                            </p>
-                        </div>
-                    </article>
-
-                </section>
-
-                <section class="aparecer row">
-                    <article class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-5 col-lg-5">
-
-                        <div class="info">
-                            <h2 class="text-center">RENTABILIDAD Y PRODUCTIVIDAD</h2>
-                            <p class="text-justify">La raza se caracteriza por tener una eficiente conversión de alimento en leche de óptima calidad.
-                                La leche de Jersey tiene en promedio 18% más proteina, 29% más grasa y 20% más calcio que
-                                otras razas especializadas, lo que traduce en un mayor precio por litro vendido (30% más
-                                sobre el valor normal).
-                            </p>
-                        </div>
-                    </article>
-                    <article class="col-md-7 col-lg-6 hidden-xs hidden-sm  imagen">
-                        <img src="/imagenes/ternera.png" alt="Novillo">
-                    </article>
-                </section>
 
             </section>
 
