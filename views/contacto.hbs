@@ -93,44 +93,60 @@
             <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 banner">
                 <img src="" alt="">
             </article>
-            <section class="container">
+            <section class="container contenido">
                 <section class="contacto col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h2>ENVÍANOS UN MENSAJE</h2>
-                    <form action="">
-                        <div>
-                            <p>NOMBRE</p>
-                            <input type="text">
+                    <form action="/enviar_correo.php" name="contactform" method="post">
+                        <div class="nombre col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
+                            <p>NOMBRES</p>
+                            <input type="text" name="nombre" placeholder="Nombres">
                         </div>
-                        <div>
-                            <p>APELLIDO</p>
-                            <input type="text">
-                        </div><div>
-                            <p>EMAIL</p>
-                            <input type="text">
+
+                        <div class="apellido col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
+                            <p>APELLIDOS</p>
+                            <input type="text" name="apellido" placeholder="Apellidos">
                         </div>
-                        <div>
-                            <p>TÉLEFONO</p>
-                            <input type="text">
-                        </div>
-<div>
+
+                        <div class="empresa col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
                             <p>EMPRESA</p>
-                            <input type="text">
+                            <input type="text" name="empresa" placeholder="El Saman">
                         </div>
-                        <div>
+
+                        <div class="telefono col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
+                            <p>CIUDAD</p>
+                            <input type="text" name="ciudad" placeholder="Santiago de Cali">
+                        </div>
+
+                        <div class="telefono col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
+                            <p>TÉLEFONO</p>
+                            <input type="number" name="telefono" placeholder="123 456 78 99">
+                        </div>
+                        <div class="email col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
+                            <p>EMAIL</p>
+                            <input type="email" name="email" placeholder="correo@correo.com">
+                        </div>
+                        <div class="asunto col-xs-12 col-sm-12 col-md-6 col-lg-6 obligatorio">
                             <p>ASUNTO</p>
-                            <input type="text">
+                            <input type="text" name="asunto" placeholder="Evento Importante">
                         </div>
-<div>
+                        <div class="mensaje col-xs-12 col-sm-12 col-md-12 col-lg-12 obligatorio">
                             <p>MENSAJE</p>
-                            <input type="text">
+                            <textarea name="comment" name="mensaje" placeholder="Hola, estoy interesado en ..."></textarea>
                         </div>
-                        
-                        <button type="submit">ENVIAR</button>
 
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 boton">
+                            <button type="submit"> ENVIAR</button>
+                        </div>
 
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 boton">
+                            <button type="reset"> RESTABLECER</button>
+                        </div>
                     </form>
                 </section>
-                <section class="maps"></section>
+                <section class="maps col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.8105433688552!2d-76.24134978736933!3d4.097271999648499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5e72d0edc89%3A0x51b3793677fe78c4!2sHacienda+El+Sam%C3%A1n!5e0!3m2!1ses!2sco!4v1530745301360"
+                        height="570" frameborder="0" style="border:0" ></iframe>
+                </section>
             </section>
         </section>
     </section>

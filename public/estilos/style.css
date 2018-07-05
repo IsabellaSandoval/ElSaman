@@ -654,4 +654,83 @@ footer .desarrolladoPor a:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
+
+/*----------------------------    Contacto      --------------------------*/
+#contacto .contenido .contacto {
+  margin-bottom: 50px;
+}
+
+#contacto .contenido .contacto h2 {
+  text-align: center;
+  color: #F7931E;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#contacto .contenido .contacto form div {
+  margin: 10px 0;
+}
+
+#contacto .contenido .contacto form div p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+#contacto .contenido .contacto form div input {
+  width: 100%;
+  border: none;
+  height: 30px;
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+#contacto .contenido .contacto form div input:focus {
+  outline-color: #F7931E;
+}
+
+#contacto .contenido .contacto form .mensaje {
+  width: 100%;
+}
+
+#contacto .contenido .contacto form .mensaje textarea {
+  width: 100%;
+  height: 100px;
+  background: #f3f3f3;
+  padding: 10px;
+  border: none;
+}
+
+#contacto .contenido .contacto form .mensaje textarea:focus {
+  outline-color: #F7931E;
+}
+
+#contacto .contenido .contacto form .boton {
+  display: block;
+  text-align: center;
+}
+
+#contacto .contenido .contacto form .boton button {
+  width: 70%;
+  border: none;
+  background: #F7931E;
+  color: #FCFCFC;
+  font-weight: bold;
+  height: 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contacto .contenido .contacto form .boton button:hover {
+  background: #cc7417;
+}
+
+#contacto .contenido .maps {
+  height: 600px;
+}
+
+.obligatorio p::before {
+  content: "* ";
+  color: #F7931E;
+}
 /*# sourceMappingURL=style.css.map */
