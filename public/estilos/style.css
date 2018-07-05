@@ -126,6 +126,7 @@ footer {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-top: 18px;
 }
 
 footer section {
@@ -137,7 +138,6 @@ footer .sombra {
   font-size: 30px;
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 footer .sombra h3 {
@@ -145,6 +145,26 @@ footer .sombra h3 {
   color: #FCFCFC;
   font-size: 17px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+footer .sombra p {
+  font-size: 15px;
+  letter-spacing: 0;
+  opacity: .7;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: inline-block;
+}
+
+footer .sombra p .fas {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+footer .sombra p:hover {
+  opacity: 1;
 }
 
 footer .sombra .fab {
