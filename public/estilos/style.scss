@@ -287,6 +287,7 @@ footer {
         letter-spacing: 3px;
         color: $grisO;
         margin-bottom: 40px;
+        font-weight: 700;
     }
     h3 {
         font-family: $nunito;
@@ -384,13 +385,16 @@ footer {
             }
             div:last-child {
                 h3 {
-                    font-weight: 900;
-                    font-family: $lato;
+                    font-weight: 700;
+                    font-family: $nunito;
                     font-size: 17px;
                     color: $gris;
                 }
                 p {
                     margin: 0 20px;
+                    color: $gris;
+                    transition: all .4s;
+
                 }
             }
         }
@@ -407,6 +411,9 @@ footer {
             div:last-child {
                 h3 {
                     color: $naranja;
+                }
+                p{
+                    color: $negro;
                 }
             }
         }
@@ -504,7 +511,7 @@ footer {
                 div:last-child {
                     h3 {
                         font-weight: 900;
-                        font-family: $lato;
+                        font-family: $nunito;
                         font-size: 17px;
                         color: $gris;
                     }
