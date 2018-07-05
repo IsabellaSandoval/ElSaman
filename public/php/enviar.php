@@ -12,5 +12,5 @@
 
   $contenido: "Nombre: " . $nombre . "\nApellido: " . $apellido . "\nEmpresa : " $empresa . "\nCiudad: " . $ciudad . "\nTélefono: " . $telefono . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje
 mail($destino, $asunto, $contenido);
-header("/contacto");
+header("Location:/contacto");
 ?>
