@@ -31,7 +31,7 @@ html {
         height: calc(100% - 90px) !important;
         #contenido {
             margin-top: 90px;
-            min-height: calc(100% - 90px) !important;
+            min-height: calc(100% - 179px) !important;
         }
     }
 }
@@ -468,7 +468,6 @@ footer {
             transition: all .4s;
             box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
             margin-bottom: 50px;
-            height: 400px;
             a {
                 text-decoration: none;
                 div:first-child {
@@ -562,191 +561,207 @@ footer {
     }
 }
 
-/*----------------------------    Terneras      --------------------------*/
+/*----------------------------    Asesoría Técnica      --------------------------*/
 
-#terneras {
-    .seccion-filtros {
-        button {
-            background: none;
-            border: none;
+#asesoriatecnica {
+    article {
+        h1 {
             font-family: $lato;
-            font-weight: bold;
-            display: block;
-            margin-top: 20px;
-            .fas {
+            font-weight: 900;
+            font-size: 45px;
+            color: $naranja;
+            margin-bottom: 80px;
+        }
+        div {
+            p {
+                font-family: $lato;
                 color: $negro;
                 font-size: 15px;
-            }
-        }
-        #filtros {
-            .rango {
-                display: block;
-                margin-left: 15px;
-                margin-top: 5px;
-                .slidecontainer {
-                    .slider {
-                        box-sizing: border-box;
-                        display: inline-block;
-                        margin: 0;
-                        padding: 0;
-                        width: 49%;
-                    }
-                }
-                .valores {
-                    .valor-text {
-                        display: inline-block;
-                        width: 48%;
-                    }
-                }
-                .botones {
-                    display: inline-block;
-                    margin: 0;
-                    padding: 0;
-                    .btn-filtro {
-                        font-family: $lato;
-                        font-weight: bold;
-                        color: $blancoA;
-                        background-color: $naranja;
-                        padding: 5px 10px;
-                        display: inline-block;
-                    }
-                }
+                margin-bottom: 15px;
             }
         }
     }
-    .seccion-productos {
-        section {
-            .filtros-top {
-                div {
-                    margin: 0;
-                    padding: 0;
-                    display: inline-block;
-                    margin-bottom: 5px;
-                    p {
-                        color: $grisO;
-                        font-family: $lato;
-                        font-weight: bold;
-                        margin: 0 10px;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $grisO;
-                        opacity: .7;
-                        transition: all .4s;
-                        .fas {
-                            font-size: 20px;
-                            margin: 0 5px;
+}
+    /*----------------------------    Terneras      --------------------------*/
+    #terneras {
+        .seccion-filtros {
+            button {
+                background: none;
+                border: none;
+                font-family: $lato;
+                font-weight: bold;
+                display: block;
+                margin-top: 20px;
+                .fas {
+                    color: $negro;
+                    font-size: 15px;
+                }
+            }
+            #filtros {
+                .rango {
+                    display: block;
+                    margin-left: 15px;
+                    margin-top: 5px;
+                    .slidecontainer {
+                        .slider {
+                            box-sizing: border-box;
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            width: 49%;
                         }
                     }
-                    a:hover {
-                        color: $naranja;
-                        opacity: 1;
+                    .valores {
+                        .valor-text {
+                            display: inline-block;
+                            width: 48%;
+                        }
+                    }
+                    .botones {
+                        display: inline-block;
+                        margin: 0;
+                        padding: 0;
+                        .btn-filtro {
+                            font-family: $lato;
+                            font-weight: bold;
+                            color: $blancoA;
+                            background-color: $naranja;
+                            padding: 5px 10px;
+                            display: inline-block;
+                        }
                     }
                 }
             }
-            .productos {
-                section {
-                    article {
-                        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-                        box-sizing: border-box;
-                        margin-bottom: 20px;
-                        padding: 20px;
-                        border: solid 1px $gris;
-                        filter: grayscale(1);
-                        transition: all .4s;
+        }
+        .seccion-productos {
+            section {
+                .filtros-top {
+                    div {
+                        margin: 0;
+                        padding: 0;
+                        display: inline-block;
+                        margin-bottom: 5px;
+                        p {
+                            color: $grisO;
+                            font-family: $lato;
+                            font-weight: bold;
+                            margin: 0 10px;
+                        }
                         a {
                             text-decoration: none;
-                            .img-info {
-                                width: 95%;
-                                img {
-                                    width: 100%;
+                            color: $grisO;
+                            opacity: .7;
+                            transition: all .4s;
+                            .fas {
+                                font-size: 20px;
+                                margin: 0 5px;
+                            }
+                        }
+                        a:hover {
+                            color: $naranja;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .productos {
+                    section {
+                        article {
+                            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+                            box-sizing: border-box;
+                            margin-bottom: 20px;
+                            padding: 20px;
+                            border: solid 1px $gris;
+                            filter: grayscale(1);
+                            transition: all .4s;
+                            a {
+                                text-decoration: none;
+                                .img-info {
+                                    width: 95%;
+                                    img {
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
-                    }
-                    article:hover {
-                        opacity: 1;
-                        filter: grayscale(0);
+                        article:hover {
+                            opacity: 1;
+                            filter: grayscale(0);
+                        }
                     }
                 }
             }
         }
     }
-}
-
-/*----------------------------    Contacto      --------------------------*/
-
-#contacto {
-    .contenido {
-        .contacto {
-            margin-bottom: 50px;
-            h2{
-                text-align: center;
-                color: $naranja;
+    /*----------------------------    Contacto      --------------------------*/
+    #contacto {
+        .contenido {
+            .contacto {
                 margin-bottom: 50px;
-                font-weight: bold;
-            }
-            form {
-                div {
-                    margin: 10px 0;
-                    p {
-                        margin: 0;
-                        padding: 0;
-                        font-weight: bold;
-                    }
-                    input{
-                        width: 100%;
-                        border: none;
-                        height: 30px;
-                        background: #f3f3f3;
-                        padding: 10px;
-                    }
-                    input:focus{
-                        outline-color: $naranja;
-                    }
-                }
-                .mensaje{
-                    width: 100%;
-                    textarea{
-                        width: 100%;
-                        height: 100px;
-                        background: #f3f3f3;
-                        padding: 10px;
-                        border: none;
-                    }
-                    textarea:focus{
-                        outline-color: $naranja;
-                    }
-                }
-                .boton{
-                    display: block;
+                h2 {
                     text-align: center;
-                    button{
-                        width: 70%;
-                        border: none;
-                        background: $naranja;
-                        color: $blancoA;
-                        font-weight: bold;
-                        height: 30px;
-                        transition: all .3s;
-                        outline: none;
+                    color: $naranja;
+                    margin-bottom: 50px;
+                    font-weight: bold;
+                }
+                form {
+                    div {
+                        margin: 10px 0;
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            font-weight: bold;
+                        }
+                        input {
+                            width: 100%;
+                            border: none;
+                            height: 30px;
+                            background: #f3f3f3;
+                            padding: 10px;
+                        }
+                        input:focus {
+                            outline-color: $naranja;
+                        }
                     }
-                    button:hover{
-                        background: rgb(204, 116, 23);
-
+                    .mensaje {
+                        width: 100%;
+                        textarea {
+                            width: 100%;
+                            height: 100px;
+                            background: #f3f3f3;
+                            padding: 10px;
+                            border: none;
+                        }
+                        textarea:focus {
+                            outline-color: $naranja;
+                        }
+                    }
+                    .boton {
+                        display: block;
+                        text-align: center;
+                        button {
+                            width: 70%;
+                            border: none;
+                            background: $naranja;
+                            color: $blancoA;
+                            font-weight: bold;
+                            height: 30px;
+                            transition: all .3s;
+                            outline: none;
+                        }
+                        button:hover {
+                            background: rgb(204, 116, 23);
+                        }
                     }
                 }
             }
-        }
-        .maps{
-            height: 600px;
+            .maps {
+                height: 600px;
+            }
         }
     }
-}
-
-.obligatorio {
-    p::before {
-        content: "* ";
-        color: $naranja;
+    .obligatorio {
+        p::before {
+            content: "* ";
+            color: $naranja;
+        }
     }
-}
