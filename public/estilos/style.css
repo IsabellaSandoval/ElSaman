@@ -719,6 +719,7 @@ footer .desarrolladoPor a:hover {
   height: 30px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  outline: none;
 }
 
 #contacto .contenido .contacto form .boton button:hover {
