@@ -367,6 +367,7 @@ footer .desarrolladoPor a:hover {
   -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
+  height: 400px;
 }
 
 #nosotros article .card div:first-child {
@@ -412,42 +413,40 @@ footer .desarrolladoPor a:hover {
 }
 
 @media (min-width: 1200px) {
-  #nosotros article #nosotros article h1 {
+  #nosotros article h1 {
     font-size: 45px;
   }
-  #nosotros article #nosotros .card {
+  #nosotros article .card {
     height: 400px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  #nosotros article #nosotros article h1 {
+  #nosotros article h1 {
     font-size: 35px;
   }
-  #nosotros article #nosotros .card {
+  #nosotros article .card {
     height: 450px;
-    width: 265px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #nosotros article #nosotros article h1 {
+  #nosotros article h1 {
     font-size: 30px;
   }
-  #nosotros article #nosotros .card {
+  #nosotros article .card {
     height: 280px;
-    width: 800px;
+    border: solid 1px #c4c4c4;
   }
 }
 
 @media (max-width: 767px) {
-  #nosotros article #nosotros article h1 {
+  #nosotros article h1 {
     font-size: 20px;
   }
-  #nosotros article #nosotros article .card {
+  #nosotros article .card {
     height: 300px;
-    width: 630px;
-    border: solid 1px #727272;
+    border: solid 1px #c4c4c4;
   }
 }
 

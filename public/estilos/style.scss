@@ -373,6 +373,7 @@ footer {
             transition: all .4s;
             box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
             margin-bottom: 50px;
+            height: 400px;
             div:first-child {
                 text-align: center;
                 margin-top: 20px;
@@ -408,57 +409,57 @@ footer {
                     color: $naranja;
                 }
             }
-        } //XS Screen
-        @media (min-width:1200px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 45px;
-                    }
-                }
-                .card {
-                    height: 400px;
-                }
+        }
+    }
+}
+
+//LG Screen
+@media (min-width:1200px) {
+    #nosotros {
+        article {
+            h1 {
+                font-size: 45px;
             }
-        } //XS Screen
-        @media (min-width:992px) and (max-width:1199px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 35px;
-                    }
-                }
-                .card {
-                    height: 450px;
-                    width: 265px;
-                }
+            .card {
+                height: 400px;
             }
-        } //XS Screen
-        @media (min-width:768px) and (max-width:991px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 30px;
-                    }
-                }
-                .card {
-                    height: 280px;
-                    width: 800px;
-                }
+        }
+    }
+} //MD Screen
+@media (min-width:992px) and (max-width:1199px) {
+    #nosotros {
+        article {
+            h1 {
+                font-size: 35px;
             }
-        } //XS Screen
-        @media (max-width:767px) {
-            #nosotros {
-                article {
-                    h1 {
-                        font-size: 20px;
-                    }
-                    .card {
-                        height: 300px;
-                        width: 630px;
-                        border: solid 1px $grisO;
-                    }
-                }
+            .card {
+                height: 450px;
+            }
+        }
+    }
+} //SM Screen
+@media (min-width:768px) and (max-width:991px) {
+    #nosotros {
+        article {
+            h1 {
+                font-size: 30px;
+            }
+            .card {
+                height: 280px;
+                border: solid 1px $gris;
+            }
+        }
+    }
+} //XS Screen
+@media (max-width:767px) {
+    #nosotros {
+        article {
+            h1 {
+                font-size: 20px;
+            }
+            .card {
+                height: 300px;
+                border: solid 1px $gris;
             }
         }
     }
