@@ -216,6 +216,11 @@ footer .desarrolladoPor a:hover {
   display: none !important;
 }
 
+.obligatorio p::before {
+  content: "* ";
+  color: #F7931E;
+}
+
 /*----------------------------    Index      --------------------------*/
 #index {
   padding: 0;
@@ -575,7 +580,7 @@ footer .desarrolladoPor a:hover {
   margin-bottom: 15px;
 }
 
-/*----------------------------    Terneras      --------------------------*/
+/*----------------------------    Visualización Productos      --------------------------*/
 #terneras .seccion-filtros button {
   background: none;
   border: none;
@@ -689,6 +694,43 @@ footer .desarrolladoPor a:hover {
           filter: grayscale(0);
 }
 
+/*----------------------------    Visualización Cada Producto      --------------------------*/
+#productos .devolverse {
+  margin-bottom: 20px;
+}
+
+#productos .devolverse a {
+  color: #727272;
+  text-decoration: none;
+}
+
+#productos section article .imagen {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+  width: 100%;
+}
+
+#productos section article div h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: #F7931E;
+}
+
+#productos section article div h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #727272;
+  font-size: 15px;
+  display: inline-block;
+}
+
+#productos section article div p {
+  text-align: justify;
+  color: #727272;
+  display: inline-block;
+}
+
 /*----------------------------    Contacto      --------------------------*/
 #contacto .contenido .contacto {
   margin-bottom: 50px;
@@ -762,10 +804,5 @@ footer .desarrolladoPor a:hover {
 
 #contacto .contenido .maps {
   height: 600px;
-}
-
-.obligatorio p::before {
-  content: "* ";
-  color: #F7931E;
 }
 /*# sourceMappingURL=style.css.map */

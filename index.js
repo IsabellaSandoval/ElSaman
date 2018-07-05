@@ -86,6 +86,23 @@ app.get('/genetica/embriones', (req, res) => {
     })
 });
 
+//Dirección de visualización de cada producto de novillas
+app.get('/genetica/embriones/:id', (req, res) => {
+
+    var embrionesCollection = db.collection('Embriones')
+        .find({
+            _id: new ObjectID(req.params.id)
+        })
+        .toArray((err, result) => {
+            // console.log(result[0]);
+            res.render('productos', {
+                volver: "/genetica/embriones",
+                Embrion: result[0]
+
+            });
+        });
+});
+
 // Dirección de visualización de productos de Terneras
 app.get('/genetica/terneras', (req, res) => {
 
@@ -132,6 +149,24 @@ app.get('/genetica/terneras', (req, res) => {
 });
 
 
+//Dirección de visualización de cada producto de terneras
+app.get('/genetica/terneras/:id', (req, res) => {
+
+    var ternerasCollection = db.collection('Terneras')
+        .find({
+            _id: new ObjectID(req.params.id)
+        })
+        .toArray((err, result) => {
+            // console.log(result[0]);
+            res.render('productos', {
+                volver: "/genetica/terneras",
+                Ternera: result[0]
+
+            });
+        });
+
+});
+
 // Dirección de visualización de productos de Novillas
 app.get('/genetica/novillas', (req, res) => {
 
@@ -177,21 +212,21 @@ app.get('/genetica/novillas', (req, res) => {
     })
 });
 
-//Dirección de visualización de cada producto
-app.get('/genetica/terneras/:id', (req, res) => {
+//Dirección de visualización de cada producto de novillas
+app.get('/genetica/novillas/:id', (req, res) => {
 
-    var ternerasCollection = db.collection('Terneras')
+    var novillasCollection = db.collection('Novillas')
         .find({
             _id: new ObjectID(req.params.id)
         })
         .toArray((err, result) => {
             // console.log(result[0]);
             res.render('productos', {
-                Ternera: result[0]
+                volver: "/genetica/novillas",
+                Novilla: result[0]
 
             });
         });
-
 });
 
 

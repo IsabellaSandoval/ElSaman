@@ -171,7 +171,7 @@ footer {
                 transform: scaleX(-1);
             }
         }
-        p:hover{
+        p:hover {
             opacity: 1;
         }
         .fab {
@@ -216,6 +216,13 @@ footer {
 
 .hidden {
     display: none !important;
+}
+
+.obligatorio {
+    p::before {
+        content: "* ";
+        color: $naranja;
+    }
 }
 
 /*----------------------------    Index      --------------------------*/
@@ -598,7 +605,7 @@ footer {
     }
 }
 
-/*----------------------------    Terneras      --------------------------*/
+/*----------------------------    Visualización Productos      --------------------------*/
 
 #terneras {
     .seccion-filtros {
@@ -710,6 +717,47 @@ footer {
     }
 }
 
+/*----------------------------    Visualización Cada Producto      --------------------------*/
+
+#productos {
+    .devolverse {
+        margin-bottom: 20px;
+        a {
+            color: $grisO;
+            text-decoration: none;
+        }
+    }
+    section {
+        article {
+            .imagen {
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 600px;
+                width: 100%;
+            }
+            div {
+                h1 {
+                    font-family: $lato;
+                    font-weight: 900;
+                    color: $naranja;
+                }
+                h4 {
+                    font-family: $lato;
+                    font-weight: 700;
+                    color: $grisO;
+                    font-size: 15px;
+                    display: inline-block;
+                }
+                p {
+                    text-align: justify;
+                    color: $grisO;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
 /*----------------------------    Contacto      --------------------------*/
 
 #contacto {
@@ -776,12 +824,5 @@ footer {
         .maps {
             height: 600px;
         }
-    }
-}
-
-.obligatorio {
-    p::before {
-        content: "* ";
-        color: $naranja;
     }
 }
