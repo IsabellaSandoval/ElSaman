@@ -11,6 +11,10 @@
   $mensaje: $_POST["mensaje"];
 
   $contenido: "Nombre: " . $nombre . "\nApellido: " . $apellido . "\nEmpresa : " $empresa . "\nCiudad: " . $ciudad . "\nTélefono: " . $telefono . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje
-mail($destino, $asunto, $contenido);
-header("Location:/contacto");
+
+  $headers : "Content-Type: text/html; charset=utf-8\n"; 
+  $headers .: "From:".$correo."\r\n";
+
+    mail($destino, $asunto, $contenido, $headers);
+  header("Location:/contacto");
 ?>
