@@ -1,6 +1,8 @@
 <?php
 //elsamanjersey@gmail.com
-  $destino: "burbanojaime98@gmail.com";
+  
+
+/*$destino: "burbanojaime98@gmail.com";
   $nombre: $_POST["nombre"];
   $apellido: $_POST["apellido"];
   $empresa: $_POST["empresa"];
@@ -17,4 +19,9 @@
 
     mail($destino, $asunto, $contenido, $headers);
   header("Location:/contacto");
+*/
+
+
+
+  var_dump($_REQUEST);
 ?>
